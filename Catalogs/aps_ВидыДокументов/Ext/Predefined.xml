@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="f94c5a05-5aa1-4f04-8a8e-86b3c16f1673">
+		<Name>ДокументыWindows</Name>
+		<Code>35 </Code>
+		<Description>Документы Microsoft Windows</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="50d64c1d-ccde-4aed-af1f-f22976da1814">
+				<Name>ДокументыOffice</Name>
+				<Code>43 </Code>
+				<Description>Документы Microsoft Office</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="b05aefab-d5cc-49a6-828a-d24e5e99754e">
+						<Name>ДокументWord</Name>
+						<Code>36 </Code>
+						<Description>Документ Microsoft Word</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c9189210-a55e-4e63-b2b4-6bc692ba62e9">
+						<Name>ЛистExcel</Name>
+						<Code>39 </Code>
+						<Description>Лист Microsoft Excel</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c4d9029a-d6ac-471f-9dbc-7237a96ba923">
+						<Name>ПрезентацияPowerPoint</Name>
+						<Code>37 </Code>
+						<Description>Презентация Microsoft PowerPoint</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="66d67347-5643-4f54-bf8f-cead82169f59">
+				<Name>WebСтраница</Name>
+				<Code>46 </Code>
+				<Description>Web-страница</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0510dab6-1893-488f-8b54-5be7d72457b9">
+				<Name>Видео</Name>
+				<Code>41 </Code>
+				<Description>Видео</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0f2e932d-f223-41f9-8436-fbf733a4a785">
+				<Name>Звук</Name>
+				<Code>42 </Code>
+				<Description>Звук</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fb95591d-8a59-4c04-8096-60f1f1fc1171">
+				<Name>Изображение</Name>
+				<Code>40 </Code>
+				<Description>Изображение</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4e2083cd-3982-410d-9ef2-868c850e7b9c">
+				<Name>ИсполняемаяПрограмма</Name>
+				<Code>45 </Code>
+				<Description>Исполняемая программа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="570a3c79-7d1f-43ca-8ebc-a7e70f001f30">
+				<Name>ПрограммноеОбеспечение</Name>
+				<Code>44 </Code>
+				<Description>Программное обеспечение</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9a5c2dd8-eb11-4db2-bf0e-bb36faa6d295">
+				<Name>ТекстовыйДокумент</Name>
+				<Code>38 </Code>
+				<Description>Текстовый документ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="477f1d41-0802-42c8-b5ce-e4dbb3532fc3">
+		<Name>ДокументыЕСКД</Name>
+		<Code>K50</Code>
+		<Description>Документы ЕСКД</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="cd3c6944-e88a-4944-bc1c-c8410a6d73b5">
+				<Name>Деталь3D</Name>
+				<Code>K00</Code>
+				<Description>3D-Модель детали</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="53d65b8c-b4be-4305-b701-c897a1b137ed">
+				<Name>Модель3D</Name>
+				<Code>K02</Code>
+				<Description>3D-Модель сборки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a4d927c1-d5f2-4e3f-b614-d939086aa2ec">
+				<Name>ВедомостьДержателейПодлинников</Name>
+				<Code>K17</Code>
+				<Description>Ведомость держателей подлинников</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1aa7aa84-735e-4adf-829d-43fa34e293cc">
+				<Name>ВедомостьКомплектаЗапасныхЧастей</Name>
+				<Code>K49</Code>
+				<Description>Ведомость комплекта запасных частей</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4b452d5e-8d43-4f8a-9bf1-498c41019fe9">
+				<Name>ВедомостьПокупных</Name>
+				<Code>K15</Code>
+				<Description>Ведомость покупных изделий</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="15b1fd45-ae6e-418d-8908-bd93f8270c4d">
+				<Name>ВедомостьРазрешенияПокупных</Name>
+				<Code>K16</Code>
+				<Description>Ведомость разрешения применения покупных изделий</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d26810a9-36be-450c-81d8-7c5a2acb705c">
+				<Name>ВедомостьСпецификаций</Name>
+				<Code>K13</Code>
+				<Description>Ведомость спецификаций</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="73dedd2e-bf72-497c-a85c-7a332ead3b72">
+				<Name>ВедомостьСсылочныхДокументов</Name>
+				<Code>K14</Code>
+				<Description>Ведомость ссылочных документов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="383626c3-920b-46a1-898d-7ad2e33baf19">
+				<Name>ВедомостьТехническогоПредложения</Name>
+				<Code>K18</Code>
+				<Description>Ведомость технического предложения</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="203a34d8-d748-4832-991a-a776f4ff32af">
+				<Name>ВедомостьТехническогоПроекта</Name>
+				<Code>K20</Code>
+				<Description>Ведомость технического проекта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1c8bb5cd-712b-4cde-b761-715c56b533cc">
+				<Name>ВедомостьЭксплуатационныхДокументов</Name>
+				<Code>K51</Code>
+				<Description>Ведомость эксплуатационных документов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c28ff6ff-769c-4858-b4ec-c419db092d42">
+				<Name>ВедомостьЭскизногоПроекта</Name>
+				<Code>K19</Code>
+				<Description>Ведомость эскизного проекта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3fefdc2a-776e-4911-bb82-119e83730282">
+				<Name>ГабаритныйЧертеж</Name>
+				<Code>K06</Code>
+				<Description>Габаритный чертеж</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="77413c1d-4f9f-4e5a-b69d-531083b8634a">
+				<Name>Инструкция</Name>
+				<Code>K27</Code>
+				<Description>Инструкция</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8ef7c282-b23d-4ba0-a18d-bae095e69d0e">
+				<Name>МонтажныйЧертеж</Name>
+				<Code>K08</Code>
+				<Description>Монтажный чертеж</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6ca690d0-25fa-413a-ac33-88a18beb10e4">
+				<Name>ОпросныйЛист</Name>
+				<Code>K52</Code>
+				<Description>Опросный лист</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8efeeb1a-2f7e-47c5-91fc-92985db8585b">
+				<Name>Паспорт</Name>
+				<Code>K48</Code>
+				<Description>Паспорт</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bb4709e4-7d5d-4bae-8d4d-8125b831ed4f">
+				<Name>ПереченьЭлементов</Name>
+				<Code>K47</Code>
+				<Description>Перечень элементов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4df30f3b-7711-43d1-bd50-f0e5c1c920cd">
+				<Name>ПояснительнаяЗаписка</Name>
+				<Code>K21</Code>
+				<Description>Пояснительная записка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8ca5d540-0454-4444-aa67-6c01d2b2db5c">
+				<Name>ПрограммаИМетодикаИспытаний</Name>
+				<Code>K24</Code>
+				<Description>Программа и методика испытаний</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="08020311-d648-4dd6-94c0-4e0fd67b6cb9">
+				<Name>ПрочиеДокументы</Name>
+				<Code>K28</Code>
+				<Description>Прочие документы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="db3722f3-4bc8-4ee6-8082-ee5fe594054c">
+				<Name>Расчет</Name>
+				<Code>K26</Code>
+				<Description>Расчет</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d3c27af9-69e2-4409-b16b-13be28734fc9">
+				<Name>РемонтныеДокументы</Name>
+				<Code>K30</Code>
+				<Description>Ремонтные документы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="76dcbb55-03ee-45ea-868e-788c0f7b888f">
+				<Name>РуководствоПоЭксплуатации</Name>
+				<Code>K50</Code>
+				<Description>Руководство по эксплуатации</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2f0af0df-7b0c-4661-abfa-6fec42e20a81">
+				<Name>СборочныйЧертеж</Name>
+				<Code>K03</Code>
+				<Description>Сборочный чертеж</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="aa246c15-9864-4387-8bbf-f647fb10c97c">
+				<Name>Спецификация</Name>
+				<Code>K12</Code>
+				<Description>Спецификация</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8fb766d5-238d-4194-8e4c-7151f7b643e0">
+				<Name>Схема</Name>
+				<Code>K10</Code>
+				<Description>Схема</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2fd7492d-c84b-4d6f-81ab-c45f25c40baf">
+				<Name>Таблица</Name>
+				<Code>K25</Code>
+				<Description>Таблица</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b7b7731b-2e9d-4d57-a640-fbc6c39e9048">
+				<Name>ТеоретическийЧертеж</Name>
+				<Code>K05</Code>
+				<Description>Теоретический чертеж</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bc356f60-3ab0-447c-9f57-ba9c099dd8b4">
+				<Name>ТехническиеУсловия</Name>
+				<Code>K23</Code>
+				<Description>Технические условия</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f7ad99f6-2901-4164-aebb-4c4b34995fbf">
+				<Name>ТехнологическиеТребования</Name>
+				<Code>K32</Code>
+				<Description>Технологические требования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="cc2ebb9d-3248-4fd8-8349-0cb4ef96062f">
+				<Name>УпаковочныйЧертеж</Name>
+				<Code>K09</Code>
+				<Description>Упаковочный чертеж</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6865bcb6-2b44-4b1d-8af7-f5147eed20e9">
+				<Name>ЧертежДетали</Name>
+				<Code>K01</Code>
+				<Description>Чертеж детали</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="32be8860-6112-47d3-9db3-5fd0577081cb">
+				<Name>ЧертежОбщегоВида</Name>
+				<Code>K04</Code>
+				<Description>Чертеж общего вида</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ff0e72f1-dfdb-419a-b72b-07d12827412d">
+				<Name>ЭксплуатационныеДокументы</Name>
+				<Code>K29</Code>
+				<Description>Эксплуатационные документы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ff962ad1-eba5-4549-ba2d-39f4749aff2d">
+				<Name>ЭлектромонтажныйЧертеж</Name>
+				<Code>K07</Code>
+				<Description>Электромонтажный чертеж</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="9292abac-da5e-47f5-a659-1a2cdd1d271b">
+		<Name>ДокументыЕСТД</Name>
+		<Code>T01</Code>
+		<Description>Документы ЕСТД</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="045c9886-4c65-483c-8111-9bdcf5f2b026">
+				<Name>ВнешнийТехнологическийПроцесс</Name>
+				<Code>T03</Code>
+				<Description>Внешний технологический процесс</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c64d62dd-fee8-41ac-805b-bdd6af11a582">
+				<Name>ИнструкцияПоМаркировке</Name>
+				<Code>K31</Code>
+				<Description>Инструкция по маркировке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="000d33f6-4d50-487d-9b76-794481510d51">
+				<Name>КомплектТехнологическихДокументов</Name>
+				<Code>T02</Code>
+				<Description>Комплект технологических документов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="08a9ac74-17dc-4262-a01b-23595e4fee95">
+				<Name>СхемаПеремещений</Name>
+				<Code>K30</Code>
+				<Description>Схема перемещений</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="40d09b45-997b-4038-8ec3-20b5d18f4c02">
+				<Name>ТехнологическийЭскиз</Name>
+				<Code>K33</Code>
+				<Description>Технологический эскиз</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="921072b1-67dd-40e1-a84d-fb0f66b67c46">
+		<Name>ДокументыСПДС</Name>
+		<Code>T04</Code>
+		<Description>Документы СПДС</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="432c5480-0d3d-48ae-9554-a5ababbdeae2">
+				<Name>ПроектнаяДокументация</Name>
+				<Code>001</Code>
+				<Description>Проектная документация</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="bd25dde0-81c0-45a7-8769-30f10100b635">
+						<Name>АрхитектурныеРешенияПД</Name>
+						<Code>003</Code>
+						<Description>Архитектурные решения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9114b6ba-b72f-45f8-85c2-3761328022c2">
+						<Name>ДекларацияБезопасностиГидротехническихСооружений</Name>
+						<Code>015</Code>
+						<Description>Декларация безопасности гидротехнических сооружений</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c324f2b4-b57b-41f4-81c3-13dbfc0ab6fb">
+						<Name>ДекларацияПромышленнойБезопасности</Name>
+						<Code>014</Code>
+						<Description>Декларация промышленной безопасности опасных производственных объектов</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="be49f16b-31ac-4f80-9378-54630ffafbaa">
+						<Name>КонструктивныеИОбъемноПанировочныеРешения</Name>
+						<Code>004</Code>
+						<Description>Конструктивные и объемно-планировочные решения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6e9fbe52-6cf3-40b3-b924-a6c613394250">
+						<Name>МероприятияПоОбеспечениюПожарнойБезопасности</Name>
+						<Code>009</Code>
+						<Description>Мероприятия по обеспечению пожарной безопасности</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b1e7cdd3-e351-4af5-b159-80b62202c849">
+						<Name>МероприятияПообеспечениюДоступаИнвалидов</Name>
+						<Code>010</Code>
+						<Description>Мероприятия пообеспечению доступа инвалидов</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3aaca6b2-3136-428c-965d-1848dfaa10cf">
+						<Name>ПереченьМероприятийПоГражданскойОбороне</Name>
+						<Code>012</Code>
+						<Description>Перечень мероприятий по гражданской обороне</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="550ad1a9-6ad4-4f53-8163-1658d074e8ef">
+						<Name>ПереченьМероприятийПоОхранеОкружающейСреды</Name>
+						<Code>008</Code>
+						<Description>Перечень мероприятий по охране окружающей среды</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="0a9c4a53-7453-4dc5-ac4d-058416641ff2">
+						<Name>ПояснительнаяЗапискаСПДС</Name>
+						<Code>001</Code>
+						<Description>Пояснительная записка</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="41e3ef57-49fd-40d7-b46d-5523023001f7">
+						<Name>ПроектОрганизацииРаботПоСносуИлиДемонтажу</Name>
+						<Code>007</Code>
+						<Description>Проект организации работ по сносу (демонтажу) объектов строительства</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="483c0e51-9e02-4d21-a9e6-ff5fc9a96bad">
+						<Name>ПроектОрганизацииСтроительства</Name>
+						<Code>006</Code>
+						<Description>Проект организации строительства</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="781c63e5-9afa-411c-b535-b224697fe0ee">
+						<Name>ПроектПолосыОтвода</Name>
+						<Code>016</Code>
+						<Description>Проект полосы отвода</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="22e5d777-1955-4345-85bd-3e1dd945a906">
+						<Name>СведенияОбИнженерномОборудовании</Name>
+						<Code>005</Code>
+						<Description>Сведения об инженерном оборудовании</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3f816ab8-89eb-4389-be45-3e48085c99d7">
+						<Name>СметаНаСтроительство</Name>
+						<Code>011</Code>
+						<Description>Смета на строительство</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="08dc5680-140b-44ea-a245-abb7f5328b15">
+						<Name>СхемаПланировочнойОрганизацииЗемельногоУчастка</Name>
+						<Code>002</Code>
+						<Description>Схема планировочной организации земельного участка</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="445b5631-a7e6-432d-9293-54f8392e7e46">
+						<Name>ТехнологическиеИКонструктивныеРешенияЛинейногоОбъекта</Name>
+						<Code>017</Code>
+						<Description>Технологические и конструктивные решения линейного объекта</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="83eb85c0-8d15-430a-882e-3b237e34b42b">
+				<Name>РабочаяДокументация</Name>
+				<Code>002</Code>
+				<Description>Рабочая документация</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="ea2b9c0d-a2e3-4f86-af4d-7869e7eae8cb">
+						<Name>АвтоматизацияКомплексная</Name>
+						<Code>039</Code>
+						<Description>Автоматизация комплексная</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b9553cb7-5e17-47e9-9b6b-f3aa4d8ee555">
+						<Name>АвтомобильныеДороги</Name>
+						<Code>029</Code>
+						<Description>Автомобильные дороги</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="60fec8cf-e165-4fed-a1f4-e6e3e32b483b">
+						<Name>АнтикоррозионнаяЗащитаКонструкцийЗданий</Name>
+						<Code>026</Code>
+						<Description>Антикоррозионная защита конструкций зданий</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="460fff69-4f98-40ce-9a35-790facbd07d3">
+						<Name>АнтикоррозионнаяЗащитаТехнологическихАппаратов</Name>
+						<Code>027</Code>
+						<Description>Антикоррозионная защита технологических аппаратов, газоходов и трубопроводов</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="17ac8da3-609d-4e63-b4ce-82002de35371">
+						<Name>АрхитектурноСтроительныеРешения</Name>
+						<Code>006</Code>
+						<Description>Архитектурно-строительные решения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="0889757f-0c7f-4e3d-98ab-b124d81970e8">
+						<Name>АрхитектурныеРешенияРД</Name>
+						<Code>005</Code>
+						<Description>Архитектурные решения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="99774a11-2185-4458-8289-2021104a00dd">
+						<Name>ВодоснабжениеИКанализация</Name>
+						<Code>012</Code>
+						<Description>Водоснабжение и канализация</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4369846e-14c0-4591-a9cf-db8c45ad9617">
+						<Name>Воздухоснабжение</Name>
+						<Code>015</Code>
+						<Description>Воздухоснабжение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="19b6448c-086b-4d00-8dcb-c2d1210cd32a">
+						<Name>Газоснабжение</Name>
+						<Code>018</Code>
+						<Description>Газоснабжение (внутренние устройства)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7b5756aa-0455-44c4-92cd-bade83f6f229">
+						<Name>ГенеральныйПлан</Name>
+						<Code>004</Code>
+						<Description>Генеральный план</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="0d0ab78d-6a89-4acb-990c-ec8802de3a11">
+						<Name>ГенеральныйПланИСооруженияТранспорта</Name>
+						<Code>003</Code>
+						<Description>Генеральный план и сооружения транспорта</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="13fb0601-ad2d-4884-bdc0-3f5f3f851005">
+						<Name>ГидротехническиеРешения</Name>
+						<Code>025</Code>
+						<Description>Гидротехнические решения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="fef5e04a-a101-42bb-8922-0e935a720f78">
+						<Name>ЖелезнодорожныеПути</Name>
+						<Code>030</Code>
+						<Description>Железнодорожные пути</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f38721de-131d-4531-92cb-9856f211d061">
+						<Name>Интерьеры</Name>
+						<Code>007</Code>
+						<Description>Интерьеры</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="52a83548-3a6f-4d21-9fdd-a6bbe18bb09b">
+						<Name>КонструкцииДеревянные</Name>
+						<Code>011</Code>
+						<Description>Конструкции деревянные</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8c00aeeb-678b-4ea5-b5b4-d89354fbab90">
+						<Name>КонструкцииЖелезобетонные</Name>
+						<Code>008</Code>
+						<Description>Конструкции железобетонные</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="77d6691e-c4ba-4e8d-b8f8-e375c2f7ffe5">
+						<Name>КонструкцииМеталлические</Name>
+						<Code>009</Code>
+						<Description>Конструкции металлические</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6933a155-8967-421a-9443-f15a22d81cba">
+						<Name>КонструкцииМеталлическиеДеталировочные</Name>
+						<Code>010</Code>
+						<Description>Конструкции металлические деталировочные</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="af82d038-c9d1-4815-bb8b-b408c93f0259">
+						<Name>НаружноеЭлектроосвещение</Name>
+						<Code>037</Code>
+						<Description>Наружное электроосвещение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d40b7f8b-fd6c-4f6f-9107-0c840ff211f7">
+						<Name>НаружныеГазопроводы</Name>
+						<Code>036</Code>
+						<Description>Наружные газопроводы</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9a56d559-0de2-4d95-ac04-33c053de4ae0">
+						<Name>НаружныеСетиВодоснабжения</Name>
+						<Code>033</Code>
+						<Description>Наружные сети водоснабжения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="754da939-fa4c-49d3-a907-105f10a966a3">
+						<Name>НаружныеСетиВодоснабженияИКанализации</Name>
+						<Code>032</Code>
+						<Description>Наружные сети водоснабжения и канализации</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7c016a7e-29f7-4e0f-9f6c-c2f819e711a9">
+						<Name>НаружныеСетиКанализации</Name>
+						<Code>034</Code>
+						<Description>Наружные сети канализации</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d1b6165a-5328-4ff9-99c6-5f2493d15e83">
+						<Name>ОтоплениеВентиляцияКондиционирование</Name>
+						<Code>013</Code>
+						<Description>Отопление, вентиляция и кондиционирование</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="cb8ec7b4-7ddd-431c-ac00-300883830a0a">
+						<Name>ОхраннаяСигнализация</Name>
+						<Code>024</Code>
+						<Description>Охранная и охранно-пожарная сигнализация</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="77cc1758-8ed9-4e30-9736-b958a5e0948b">
+						<Name>ПожарнаяСигнализация</Name>
+						<Code>023</Code>
+						<Description>Пожарная сигнализация</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f19aa565-1353-47df-9480-6f0c30c7e671">
+						<Name>Пожаротушение</Name>
+						<Code>022</Code>
+						<Description>Пожаротушение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4f42a965-99b8-4c64-a13c-9421908e83e3">
+						<Name>ПроводныеСредстваСвязи</Name>
+						<Code>040</Code>
+						<Description>Проводные средства связи</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="193b93ed-53a0-4132-856c-4edb76f7d87f">
+						<Name>Пылеудаление</Name>
+						<Code>016</Code>
+						<Description>Пылеудаление</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="e0f7e3a3-3a02-480f-b0e0-93063283621f">
+						<Name>РадиосвязьРадиовещаниеТелевидение</Name>
+						<Code>021</Code>
+						<Description>Радиосвязь, радиовещание и телевидение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c13a6226-2780-4a5e-89ad-9b7e478c1c51">
+						<Name>СиловоеЭлектрооборудование</Name>
+						<Code>019</Code>
+						<Description>Силовое электрооборудование</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2e81658d-52a9-431d-b587-bb78eba695f0">
+						<Name>СооруженияТранспорта</Name>
+						<Code>031</Code>
+						<Description>Сооружения транспорта</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4509d955-513e-462d-8aa9-1efd6f91e61b">
+						<Name>ТепловаяИзоляцияОборудованияИТрубопроводов</Name>
+						<Code>028</Code>
+						<Description>Тепловая изоляция оборудования и трубопроводов</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2efa0892-debb-4269-8561-9a6ef212edd5">
+						<Name>ТепломеханическиеРешенияКотельных</Name>
+						<Code>014</Code>
+						<Description>Тепломеханические решения котельных</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1f6c189a-2acc-4c32-8f46-e7f3614b8f08">
+						<Name>ТепломеханическиеРешенияТепловыхСетей</Name>
+						<Code>035</Code>
+						<Description>Тепломеханические решения тепловых сетей</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="40c51609-a20b-401d-882c-e4a0a97d5b61">
+						<Name>ТехнологическиеКоммуникации</Name>
+						<Code>002</Code>
+						<Description>Технологические коммуникации</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="25d88212-85f1-472b-91b6-0c5dd27e774e">
+						<Name>ТехнологияПроизводства</Name>
+						<Code>001</Code>
+						<Description>Технология производства</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f0208399-7871-429a-a01e-94ef1cadb365">
+						<Name>Холодоснабжение</Name>
+						<Code>017</Code>
+						<Description>Холодоснабжение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7e2a28a0-b0cd-4a9c-a404-b88ea82e05e4">
+						<Name>ЭлектрическоеОсвещение</Name>
+						<Code>020</Code>
+						<Description>Электрическое освещение (внутреннее)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="182de78c-b2cf-49b1-bca1-faebeb6283b2">
+						<Name>Электроснабжение</Name>
+						<Code>038</Code>
+						<Description>Электроснабжение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="5b5fc572-5145-4621-89e2-576a0507d9cc">
+				<Name>АвторскийЛист</Name>
+				<Code>041</Code>
+				<Description>Авторский лист</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b3b77218-b000-4a71-b16d-b94f4c11a389">
+				<Name>ЗаключениеЭкспертизы</Name>
+				<Code>042</Code>
+				<Description>Заключение экспертизы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

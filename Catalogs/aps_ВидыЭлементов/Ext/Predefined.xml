@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="bb24beeb-419b-43d9-871f-cdd1d24ec0db">
+		<Name>АктивныеДокументыAutoCAD</Name>
+		<Code>F02</Code>
+		<Description>Активные документы AutoCAD</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d9f5b9a5-5f14-435c-83dd-13e2e83f9b2f">
+				<Name>АктивныйДокументДетальAutoCAD</Name>
+				<Code>A17</Code>
+				<Description>Активный документ AutoCAD (деталь)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="870f2805-9c9e-4be3-8068-e48234b43647">
+				<Name>АктивныйДокументСборкаAutoCAD</Name>
+				<Code>A18</Code>
+				<Description>Активный документ AutoCAD (сборка)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="06bf5665-a4b0-43ca-bd1e-60dfe1e622a0">
+				<Name>АктивныйДокументЧертежAutoCAD</Name>
+				<Code>A19</Code>
+				<Description>Активный документ AutoCAD (чертеж)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="57b47239-7174-45ad-acca-e017c6cea019">
+		<Name>АктивныеДокументыInventor</Name>
+		<Code>F03</Code>
+		<Description>Активные документы Inventor</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="73fa1544-87f7-457d-ae19-4d82c1e15110">
+				<Name>АктивныйДокументДетальInventor</Name>
+				<Code>A20</Code>
+				<Description>Активный документ Inventor (деталь)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f1b76011-e8b8-4f87-b3f4-a2a125f57012">
+				<Name>АктивныйДокументСборкаInventor</Name>
+				<Code>A21</Code>
+				<Description>Активный документ Inventor (сборка)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="003018d8-671c-481f-86db-b6f8984de59a">
+				<Name>АктивныйДокументЧертежInventor</Name>
+				<Code>A22</Code>
+				<Description>Активный документ Inventor (чертеж)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="18c305e4-46b0-4b51-98de-2dadf40c535b">
+		<Name>АктивныеДокументыSolidEdge</Name>
+		<Code>V16</Code>
+		<Description>Активные документы SolidEdge</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="cde2b4cf-bbbe-486b-80d0-b385e33c39a6">
+				<Name>АктивныйДокументДетальSolidEdge</Name>
+				<Code>V17</Code>
+				<Description>Активный документ SolidEdge (деталь)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6b99f45d-125b-4d4f-af36-b55c8be10e18">
+				<Name>АктивныйДокументСборкаSolidEdge</Name>
+				<Code>V18</Code>
+				<Description>Активный документ SolidEdge (сборка)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8fce8d66-de52-4bff-b98a-a40559596e6b">
+				<Name>АктивныйДокументЧертежSolidEdge</Name>
+				<Code>V19</Code>
+				<Description>Активный документ SolidEdge (чертеж)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f1571958-08a4-4b31-8294-b1a7c540e03b">
+		<Name>АктивныеДокументыSolidWorks</Name>
+		<Code>F00</Code>
+		<Description>Активные документы SolidWorks</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ba7b8ddf-8091-483f-80cc-2d2e120dff48">
+				<Name>АктивныйДокументДетальSolidWorks</Name>
+				<Code>A11</Code>
+				<Description>Активный документ SolidWorks (деталь)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="99a33105-f4ea-4fd0-8ef2-662ad6ed574f">
+				<Name>АктивныйДокументСборкаSolidWorks</Name>
+				<Code>A12</Code>
+				<Description>Активный документ SolidWorks (сборка)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c1168125-1e74-45ca-a171-4dd908ae8688">
+				<Name>АктивныйДокументЧертежSolidWorks</Name>
+				<Code>A13</Code>
+				<Description>Активный документ SolidWorks (чертеж)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="12a1aed3-6cfe-413a-bfa5-40e44566fa6c">
+		<Name>АктивныеДокументыКОМПАС</Name>
+		<Code>F01</Code>
+		<Description>Активные документы КОМПАС</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="09a8c6be-be3c-4d89-9f56-13e879e297ea">
+				<Name>АктивныйДокументДетальКОМПАС</Name>
+				<Code>A14</Code>
+				<Description>Активный документ КОМПАС (деталь)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="99faac9e-01c0-4c6a-8352-7f3c0ab0843c">
+				<Name>АктивныйДокументСборкаКОМПАС</Name>
+				<Code>A15</Code>
+				<Description>Активный документ КОМПАС (сборка)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2f1b050d-9ad5-4faf-af51-3f919a9fd613">
+				<Name>АктивныйДокументЧертежКОМПАС</Name>
+				<Code>A16</Code>
+				<Description>Активный документ КОМПАС (чертеж)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="579a3f66-35d7-4e50-bce6-04b1d2c4d608">
+		<Name>ДопустимыеЗамены</Name>
+		<Code>F12</Code>
+		<Description>Допустимые замены</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="b346199d-b621-4105-ab98-66525800310f">
+				<Name>ВариантЗамены</Name>
+				<Code>V01</Code>
+				<Description>Варианты замены</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d1d23aac-af16-43b5-a44b-23c627a6fabb">
+				<Name>ПакетЗамены</Name>
+				<Code>V02</Code>
+				<Description>Пакеты замены</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5f79dca9-f1f4-4c55-aea8-e65d97f6b928">
+		<Name>Изделия</Name>
+		<Code>F10</Code>
+		<Description>Изделия</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="9b62ab78-5f04-4b6e-96fa-dc9578511ac1">
+				<Name>Деталь</Name>
+				<Code>P03</Code>
+				<Description>Детали</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1a389122-27d1-48ee-a9b2-d7807fadeb40">
+				<Name>Комплекс</Name>
+				<Code>P01</Code>
+				<Description>Комплексы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b2d5fd6b-a3ea-470c-aacc-bc6af269ec38">
+				<Name>Комплект</Name>
+				<Code>P07</Code>
+				<Description>Комплекты</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e928833c-45bc-4943-bdd0-c7c7913a7e1e">
+				<Name>СбЕдиница</Name>
+				<Code>P02</Code>
+				<Description>Сборочные единицы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8117f5f2-163e-4f1f-a22d-3859aa6e59ab">
+		<Name>КонструкторскоТехнологическийСправочник</Name>
+		<Code>F04</Code>
+		<Description>Конструкторско-технологический справочник</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="dcbcd904-5730-4be1-9895-bc65e9f798e0">
+				<Name>Материалы</Name>
+				<Code>F40</Code>
+				<Description>Материалы</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="b914558f-e4d6-4ea1-90f7-3425cdd50ddf">
+						<Name>МаркаМатериала</Name>
+						<Code>C09</Code>
+						<Description>Марки материалов</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="5638c625-aa5f-468e-8f54-96e48cb24db3">
+						<Name>Материал</Name>
+						<Code>P06</Code>
+						<Description>Материалы</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6167feb0-c4a8-4f21-bc6f-c05d69ae217d">
+						<Name>Сортамент</Name>
+						<Code>C10</Code>
+						<Description>Сортаменты</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2aa5a26a-779f-4047-8e19-8f6db21c702b">
+						<Name>Типоразмер</Name>
+						<Code>C11</Code>
+						<Description>Типоразмеры</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="355ccbc8-19b6-4b5e-afe0-987e7035ad5c">
+				<Name>Ресурсы</Name>
+				<Code>F50</Code>
+				<Description>Ресурсы</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="aa088e9c-f841-4dcb-bf15-28e92e51cc56">
+						<Name>Ресурс</Name>
+						<Code>C01</Code>
+						<Description>Ресурсы</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="c7bc07e6-5fc1-4e9e-93ec-17e3c709fefc">
+				<Name>СредстваОснащения</Name>
+				<Code>F43</Code>
+				<Description>Средства оснащения</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="e63b0407-e6ea-4c13-8882-7b0561b493fe">
+						<Name>Оборудование</Name>
+						<Code>C01</Code>
+						<Description>Оборудование</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3e781c7c-cbd8-48d7-9462-537459d1ca47">
+						<Name>СредствоТехнологическогоОснащения</Name>
+						<Code>C02</Code>
+						<Description>Средства технологического оснащения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="f3e5c3ad-8986-4e6c-884f-3684edd04304">
+				<Name>СтПрИзделия</Name>
+				<Code>F41</Code>
+				<Description>Стандартные и прочие изделия</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="6e25a2db-795d-4ab6-836c-0762d2d4c7cf">
+						<Name>ПрИзд</Name>
+						<Code>P05</Code>
+						<Description>Прочие изделия</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="77dcc9ac-4fd0-4dab-9fc4-ebc7a3cde0db">
+						<Name>СтИзд</Name>
+						<Code>P04</Code>
+						<Description>Стандартные изделия</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="e3b1b299-f1e5-4cb2-99fa-9aaa4a4e738f">
+				<Name>ЭРИ</Name>
+				<Code>F42</Code>
+				<Description>Электро-радио элементы</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="fa4a59af-62b2-42c0-b212-46c96d4cec75">
+						<Name>ЭлектроРадиоЭлемент</Name>
+						<Code>V08</Code>
+						<Description>Электро-радио элементы</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a5e1bfdd-0d28-47c7-b4ca-47ac1de9f307">
+		<Name>Прочее</Name>
+		<Code>F09</Code>
+		<Description>Прочее</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="0fbb067b-8968-4c1f-ae51-5ff6c35a55af">
+				<Name>БлокРасчета</Name>
+				<Code>S02</Code>
+				<Description>Блок расчета</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a1deba47-9dea-48f4-a689-eb74e3b6166d">
+				<Name>ГруппаРасчета</Name>
+				<Code>S03</Code>
+				<Description>Группа расчета</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9303b3c5-4741-41f9-8a58-9536a4d6e25f">
+				<Name>ЗаписьТаблицы</Name>
+				<Code>S07</Code>
+				<Description>Записи таблицы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1ff3400c-1a9d-48a5-8b19-401f14256959">
+				<Name>Оформление</Name>
+				<Code>S04</Code>
+				<Description>Оформление</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5aa1fd3f-5e48-4060-a284-4794153ce5dd">
+		<Name>Служебные</Name>
+		<Code>F06</Code>
+		<Description>Служебные</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="8d069272-0735-48e1-9e94-7827c4d7b520">
+				<Name>МойPDM</Name>
+				<Code>F16</Code>
+				<Description>Мой PDM</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="75592ef8-5906-4642-831d-d3c0b0701fe4">
+						<Name>ЛичнаяПапка</Name>
+						<Code>S01</Code>
+						<Description>Личные папки</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="9f2fbccd-b319-47b7-b7e5-c18102ff7e37">
+				<Name>Связи</Name>
+				<Code>F26</Code>
+				<Description>Связи</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="976d50db-f32b-4b07-ad2a-1d9ea91af0b4">
+						<Name>СвязьСостава</Name>
+						<Code>S02</Code>
+						<Description>Связи элементов изделия</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="88ff5be0-c35d-4ce0-9539-6ab85fd40afc">
+						<Name>СвязьТехнологии</Name>
+						<Code>S03</Code>
+						<Description>Связи элементов технологии</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="3c062dd0-a077-48c1-81d0-914069023283">
+		<Name>Строительство</Name>
+		<Code>V11</Code>
+		<Description>Строительство</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="3efa09d9-23eb-436f-bc33-6057e517916f">
+				<Name>БлокСекция</Name>
+				<Code>V14</Code>
+				<Description>Блок-секция</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0c015348-5c9d-464d-b7d3-a251826a366a">
+				<Name>Корпус</Name>
+				<Code>V13</Code>
+				<Description>Корпус</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="14446403-d250-425b-b8b5-b3940d7a3d8a">
+				<Name>Объект</Name>
+				<Code>V12</Code>
+				<Description>Объект</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="994099a5-4886-448a-b759-a7ef73159d9f">
+				<Name>Стройка</Name>
+				<Code>V15</Code>
+				<Description>Стройка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5992ee89-4512-4edd-b02b-e48a98664eb8">
+		<Name>Технология</Name>
+		<Code>F07</Code>
+		<Description>Технология</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="65568c68-a164-4f64-a5ec-d9f576656f09">
+				<Name>Операции</Name>
+				<Code>F17</Code>
+				<Description>Операции</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="9da60340-0b5e-4a7d-a742-e35151b92645">
+						<Name>ВидТехнологическойОперации</Name>
+						<Code>T00</Code>
+						<Description>Виды технологических операций</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="82dec47e-3721-466a-9c26-dd2641fd0b81">
+						<Name>СодержаниеОперации</Name>
+						<Code>T02</Code>
+						<Description>Содержание операции</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1c572e0a-2ade-497e-b8bf-b585f3bc468e">
+						<Name>ТехнологическаяОперация</Name>
+						<Code>T01</Code>
+						<Description>Технологические операции</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="b393d5f8-eb6c-4265-8c5b-13e6d7947e47">
+				<Name>Расцеховка</Name>
+				<Code>F37</Code>
+				<Description>Производственный процесс</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="f16fbf69-7773-414e-80fa-4a078c05e0da">
+						<Name>Заготовка</Name>
+						<Code>T03</Code>
+						<Description>Заготовки</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b484f4f7-e482-4c96-8724-986167209d64">
+						<Name>Маршрут</Name>
+						<Code>T04</Code>
+						<Description>Маршруты</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a46e14f0-5cd6-47b5-a457-23eb0cf66842">
+						<Name>ПунктКооперации</Name>
+						<Code>V10</Code>
+						<Description>Пункт кооперации</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2acddf35-f874-4605-b868-a121b002c82f">
+						<Name>ПунктКонтроля</Name>
+						<Code>V05</Code>
+						<Description>Пункты контроля</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3923a8ad-4206-42c9-83ca-bddd82555d64">
+						<Name>ПунктОбработки</Name>
+						<Code>V03</Code>
+						<Description>Пункты обработки</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4977baea-a2e4-44b2-9468-069723dc57d7">
+						<Name>ПунктПеремещения</Name>
+						<Code>V06</Code>
+						<Description>Пункты перемещения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8b32d0d5-7900-49f1-8905-e033714202f4">
+						<Name>ПунктСкладирования</Name>
+						<Code>V04</Code>
+						<Description>Пункты складирования</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="79634c36-cd48-44eb-aadc-55815267fdaf">
+				<Name>ТехнологическийПроцесс</Name>
+				<Code>T06</Code>
+				<Description>Технологические процессы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6ec4b3cb-ca3e-43ab-89d3-caf3bfc3920f">
+		<Name>Документ</Name>
+		<Code>A01</Code>
+		<Description>Документы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="33376463-8ebc-43de-9f5b-e6b54e41431d">
+		<Name>Заказ</Name>
+		<Code>V20</Code>
+		<Description>Заказы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0ec11e6a-54c6-4309-bef7-56ea62130d4d">
+		<Name>ПапкаСправочника</Name>
+		<Code>A00</Code>
+		<Description>Папки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
