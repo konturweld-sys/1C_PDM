@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выберите, какие файлы выгрузить...</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en_US</v8:lang>
+			<v8:content>Files to download</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаТолькоЭтотФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа только этот файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа только этот файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТолькоЭтотФайлРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<PictureDecoration name="Картинка1" id="4">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.aps_ОдинФайл</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Картинка1КонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="Картинка1РасширеннаяПодсказка" id="20"/>
+				</PictureDecoration>
+				<LabelDecoration name="ТолькоЭтотФайл" id="6">
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>web:RoyalBlue</TextColor>
+					<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только этот файл</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Only this file</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ТолькоЭтотФайлКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ТолькоЭтотФайлРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="Click">РежимНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Надпись2" id="8">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даже если в документе несколько файлов, будет выгружен только этот.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Even if the document contains several files, only this file will be downloaded</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Надпись2КонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="Надпись2РасширеннаяПодсказка" id="22"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаВсеФайлы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все файлы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>All files</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все файлы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>All files</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВсеФайлыРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<PictureDecoration name="Картинка2" id="11">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.aps_Файл</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Картинка2КонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="Картинка2РасширеннаяПодсказка" id="24"/>
+				</PictureDecoration>
+				<LabelDecoration name="ВыбратьФайлы" id="13">
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>web:RoyalBlue</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрать файлы вручную...</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Select files manually</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ВыбратьФайлыКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ВыбратьФайлыРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="Click">РежимНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Надпись3" id="15">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Будут выгружены файлы документов, выбранные Вами.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>The documents selected by you will be downloaded</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Надпись3КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Надпись3РасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<CheckBoxField name="ЗапомнитьМойВыбор" id="17">
+			<DataPath>ЗапомнитьМойВыбор</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запомнить мой выбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Don't ask me again</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапомнитьМойВыборКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ЗапомнитьМойВыборРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗапомнитьМойВыбор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запомнить мой выбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Don't ask me again</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

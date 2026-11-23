@@ -1,0 +1,1457 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проводник</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Дерево" id="1">
+			<Representation>Tree</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<SelectionMode>SingleRow</SelectionMode>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Дерево</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="ДеревоКонтекстноеМенюГруппаВыбрать" id="65">
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаВыбратьРасширеннаяПодсказка" id="82"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюКнопкаВыбрать" id="66">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаВыбрать</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Готово</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выбрать</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en_US</v8:lang>
+										<v8:content>Select</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюКнопкаВыбратьРасширеннаяПодсказка" id="83"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ДеревоКонтекстноеМенюГруппаОтметить" id="59">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отметить</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отметить</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаОтметитьРасширеннаяПодсказка" id="84"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюОтметитьОдинУровень" id="63">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаОтметитьОдинУровень</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюОтметитьОдинУровеньРасширеннаяПодсказка" id="85"/>
+							</Button>
+							<Button name="ДеревоКонтекстноеМенюОтметитьВсе" id="60">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаОтметитьВсе</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюОтметитьВсеРасширеннаяПодсказка" id="86"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Popup name="ДеревоКонтекстноеМенюГруппаСнять" id="61">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять отметку</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять отметку</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаСнятьРасширеннаяПодсказка" id="87"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюСнятьОдинУровень" id="62">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаСнятьОдинУровень</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюСнятьОдинУровеньРасширеннаяПодсказка" id="88"/>
+							</Button>
+							<Button name="ДеревоКонтекстноеМенюСнятьВсе" id="64">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаСнятьВсе</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюСнятьВсеРасширеннаяПодсказка" id="89"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<ButtonGroup name="ДеревоКонтекстноеМенюГруппаИнформация" id="35">
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаИнформацияРасширеннаяПодсказка" id="90"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюИнформация" id="26">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.aps_ИнформацияОбЭлементе.StandardCommand.Open</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Свойства</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Свойства</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюИнформацияРасширеннаяПодсказка" id="91"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ДеревоКонтекстноеМенюГруппаСтроки" id="30">
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаСтрокиРасширеннаяПодсказка" id="92"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюПерестроить" id="27">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаПерестроить</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.Refresh</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюПерестроитьРасширеннаяПодсказка" id="93"/>
+							</Button>
+							<Button name="ДеревоКонтекстноеМенюРазвернуть" id="28">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаРазвернутьВсе</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_РазвернутьВсе</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюРазвернутьРасширеннаяПодсказка" id="94"/>
+							</Button>
+							<Button name="ДеревоКонтекстноеМенюСвернутьВсе" id="40">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаСвернутьВсе</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_СвернутьВсеКромеТекущей</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюСвернутьВсеРасширеннаяПодсказка" id="95"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ДеревоКонтекстноеМенюГруппаОткрыть" id="31">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть ...</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть...</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаОткрытьРасширеннаяПодсказка" id="96"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюОткрыть" id="32">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаОткрытьПроводник</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Проводник</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Проводник</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюОткрытьРасширеннаяПодсказка" id="97"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<ButtonGroup name="ДеревоКонтекстноеМенюГруппаПраваДоступа" id="37">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Права доступа</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Права доступа</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоКонтекстноеМенюГруппаПраваДоступаРасширеннаяПодсказка" id="98"/>
+						<ChildItems>
+							<Button name="ДеревоКонтекстноеМенюПраваДоступа" id="38">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.aps_ПраваДоступа.StandardCommand.Open</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_ГрупповаяПолитика</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Права доступа</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКонтекстноеМенюПраваДоступаРасширеннаяПодсказка" id="99"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ДеревоКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="ДеревоГруппаВыбрать" id="52">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выбрать</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Select</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Информация</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоГруппаВыбратьРасширеннаяПодсказка" id="100"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаВыбрать" id="49">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<DefaultButton>true</DefaultButton>
+								<CommandName>Form.Command.КнопкаВыбрать</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Готово</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выбрать</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en_US</v8:lang>
+										<v8:content>Select</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКнопкаВыбратьРасширеннаяПодсказка" id="101"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ДеревоГруппаПерейти" id="78">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Перейти ...</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Go to...</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДеревоГруппаПерейтиРасширеннаяПодсказка" id="102"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаРазделЛичныеПапки" id="77">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаРазделЛичныеПапки</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Личное</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+									<xr:TransparentPixel x="1" y="1"/>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаРазделЛичныеПапкиРасширеннаяПодсказка" id="103"/>
+							</Button>
+							<Button name="ДеревоКнопкаРазделСправочник" id="79">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаРазделСправочник</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Ресурс</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+									<xr:TransparentPixel x="26" y="2"/>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаРазделСправочникРасширеннаяПодсказка" id="104"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<ButtonGroup name="ДеревоГруппаДляСтроки" id="16">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дерево группа для строки</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дерево группа для строки</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоГруппаДляСтрокиРасширеннаяПодсказка" id="105"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаПерестроить" id="25">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.КнопкаПерестроить</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.Refresh</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаПерестроитьРасширеннаяПодсказка" id="106"/>
+							</Button>
+							<Button name="ДеревоКнопкаРазвернутьВсе" id="13">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.КнопкаРазвернутьВсе</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_РазвернутьВсе</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Развернуть все</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКнопкаРазвернутьВсеРасширеннаяПодсказка" id="107"/>
+							</Button>
+							<Button name="ДеревоКнопкаСвернутьВсе" id="39">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаСвернутьВсе</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_СвернутьВсеКромеТекущей</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Свернуть все уровни, кроме текущего</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКнопкаСвернутьВсеРасширеннаяПодсказка" id="108"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ДеревоГруппаИнформация" id="15">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Информация</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Информация</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоГруппаИнформацияРасширеннаяПодсказка" id="109"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаИнформация" id="8">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.aps_ИнформацияОбЭлементе.StandardCommand.Open</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Свойства</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаИнформацияРасширеннаяПодсказка" id="110"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ДеревоГруппаОткрыть" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть ...</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Open in ...</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоГруппаОткрытьРасширеннаяПодсказка" id="111"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаОткрытьПроводник" id="10">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаОткрытьПроводник</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Проводник</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Проводник</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКнопкаОткрытьПроводникРасширеннаяПодсказка" id="112"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ДеревоГруппаОтметить" id="53">
+						<Visible>false</Visible>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отметить</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отметить</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Representation>Picture</Representation>
+						<ExtendedTooltip name="ДеревоГруппаОтметитьРасширеннаяПодсказка" id="113"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаОтметитьОдинУровень" id="55">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.КнопкаОтметитьОдинУровень</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаОтметитьОдинУровеньРасширеннаяПодсказка" id="114"/>
+							</Button>
+							<Button name="ДеревоКнопкаОтметитьВсе" id="54">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.КнопкаОтметитьВсе</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаОтметитьВсеРасширеннаяПодсказка" id="115"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Popup name="ДеревоГруппаСнять" id="56">
+						<Visible>false</Visible>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять отметку</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Representation>Picture</Representation>
+						<ExtendedTooltip name="ДеревоГруппаСнятьРасширеннаяПодсказка" id="116"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаСнятьОдинУровень" id="58">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаСнятьОдинУровень</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаСнятьОдинУровеньРасширеннаяПодсказка" id="117"/>
+							</Button>
+							<Button name="ДеревоКнопкаСнятьВсе" id="57">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КнопкаСнятьВсе</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаСнятьВсеРасширеннаяПодсказка" id="118"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<ButtonGroup name="ДеревоГруппаВсплывающиеОкна" id="18">
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Права доступа</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ДеревоГруппаВсплывающиеОкнаРасширеннаяПодсказка" id="119"/>
+						<ChildItems>
+							<Button name="ДеревоКнопкаПраваДоступа" id="19">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.aps_ПраваДоступа.StandardCommand.Open</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_ГрупповаяПолитика</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Права доступа</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ДеревоКнопкаПраваДоступаРасширеннаяПодсказка" id="120"/>
+							</Button>
+							<Button name="ДеревоКнопкаПрименяемость" id="75">
+								<Type>CommandBarButton</Type>
+								<CommandName>0:66b9cd44-17a7-42e7-9f34-40bbceddb349</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Применяемость</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаПрименяемостьРасширеннаяПодсказка" id="121"/>
+							</Button>
+							<Button name="ДеревоКнопкаФайлы" id="76">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.aps_ФайлыДокумента.StandardCommand.Open</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.aps_Файл</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДеревоКнопкаФайлыРасширеннаяПодсказка" id="122"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоРасширеннаяПодсказка" id="123"/>
+			<SearchStringAddition name="ДеревоСтрокаПоиска" id="124">
+				<AdditionSource>
+					<Item>Дерево</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоСтрокаПоискаКонтекстноеМеню" id="125"/>
+				<ExtendedTooltip name="ДеревоСтрокаПоискаРасширеннаяПодсказка" id="126"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоСостояниеПросмотра" id="127">
+				<AdditionSource>
+					<Item>Дерево</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоСостояниеПросмотраКонтекстноеМеню" id="128"/>
+				<ExtendedTooltip name="ДеревоСостояниеПросмотраРасширеннаяПодсказка" id="129"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоУправлениеПоиском" id="130">
+				<AdditionSource>
+					<Item>Дерево</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоУправлениеПоискомКонтекстноеМеню" id="131"/>
+				<ExtendedTooltip name="ДеревоУправлениеПоискомРасширеннаяПодсказка" id="132"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДеревоВыбор</Event>
+				<Event name="OnActivateRow">ДеревоПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="ДеревоГруппа" id="45">
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ДеревоГруппаРасширеннаяПодсказка" id="133"/>
+					<ChildItems>
+						<PictureField name="ДеревоКартинка" id="80">
+							<DataPath>Дерево.Картинка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.aps_ВидыЭлементов</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ДеревоКартинкаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ДеревоКартинкаРасширеннаяПодсказка" id="134"/>
+						</PictureField>
+						<CheckBoxField name="ДеревоВыбран" id="41">
+							<DataPath>Дерево.Выбран</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДеревоВыбранКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ДеревоВыбранРасширеннаяПодсказка" id="135"/>
+							<Events>
+								<Event name="OnChange">ДеревоВыбранПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ДеревоПредставление" id="20">
+							<DataPath>Дерево.Представление</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДеревоПредставлениеКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ДеревоПредставлениеРасширеннаяПодсказка" id="136"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ДеревоВидЭлемента" id="50">
+					<DataPath>Дерево.ВидЭлемента</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоВидЭлементаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДеревоВидЭлементаРасширеннаяПодсказка" id="137"/>
+				</InputField>
+				<CheckBoxField name="ДеревоВетвьПостроена" id="22">
+					<DataPath>Дерево.ВетвьПостроена</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоВетвьПостроенаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДеревоВетвьПостроенаРасширеннаяПодсказка" id="138"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Дерево" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево представления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Presentation tree</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЭлементСсылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.aps_ЭлементыТехнологии</v8:Type>
+						<v8:Type>cfg:CatalogRef.aps_ЭлементыИзделия</v8:Type>
+						<v8:Type>cfg:CatalogRef.aps_ЭлементыСправочников</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВетвьПостроена" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветвь построена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Branch is built</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Выбран" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Checked</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидЭлемента" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид элемента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Item type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.aps_ВидыЭлементов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭлементСвязи" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.aps_ЭлементыСвязей</v8:Type>
+						<v8:Type>cfg:CatalogRef.aps_ВертикальныеСвязи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидСвязи" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид связи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Link type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.aps_ВидыСвязей</v8:Type>
+						<v8:Type>cfg:CatalogRef.aps_ШаблоныТехнологическихСвязей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Параметры" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTree</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПорядокВывода" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок вывода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="Дерево.Параметры">
+					<Column name="Ссылка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ссылка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.aps_ПараметрыЭлементовТехнологии</v8:Type>
+							<v8:Type>cfg:CatalogRef.aps_ПараметрыЭлементовИзделия</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Имя" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Name</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Свойство" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Свойство</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:ChartOfCharacteristicTypesRef.aps_Свойства</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Значение" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Значение</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Value</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:TypeSet>cfg:Characteristic.aps_Свойства</v8:TypeSet>
+						</Type>
+					</Column>
+					<Column name="ЕдиницаИзмерения" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Единица измерения</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Unit</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.КлассификаторЕдиницИзмерения</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ЭтоПараметрСвязи" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Это параметр связи</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПравилоУправления" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило управления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogObject.aps_ПравилаУправления</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимВыбора" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим выбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОдиночныйВыбор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Одиночный выбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыбиратьXDTO" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбирать XDTO</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Select XDTO</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоКорневые" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только корневые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоступныеВидыЭлементов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступные виды элементов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Accessible item types</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаЛичнаяПапка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка личная папка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.aps_ЭлементыТехнологии</v8:Type>
+				<v8:Type>cfg:CatalogRef.aps_ЭлементыИзделия</v8:Type>
+				<v8:Type>cfg:CatalogRef.aps_ЭлементыСправочников</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийРаздел" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий раздел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаОбщиеПапки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка общие папки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.aps_ЭлементыИзделия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНесвязанные" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка несвязанные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.aps_ЭлементыИзделия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресДереваЛичныхПапок" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес дерева личных папок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Address of private folders tree</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресДереваСправочника" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес дерева справочника</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Address of classifier tree</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.aps_Проводник</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоВыбран</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Дерево.ВидЭлемента</dcsset:left>
+						<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">ОтображатьФлажок</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоВыбран</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Дерево.ВидЭлемента</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоПредставление</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Дерево.ВидЭлемента</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Дерево.ЭлементСсылка</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkBlue</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоВыбран</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоКартинка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоПредставление</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Дерево.ВидЭлемента</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.aps_ВидыЭлементов.Оформление</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаОткрытьПроводник" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть проводник</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open explorer</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в проводнике</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open in explorer</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+E</Shortcut>
+			<Action>КнопкаОткрытьПроводник</Action>
+		</Command>
+		<Command name="КнопкаРазвернутьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть всё</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Expand all</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все уровни дерева</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Expand all tree levels</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаРазвернутьВсе</Action>
+		</Command>
+		<Command name="КнопкаПерестроить" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перестроить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Refresh</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перестроить текущую строку дерева</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Refresh the current row</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаПерестроить</Action>
+		</Command>
+		<Command name="КнопкаСвернутьВсе" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все, кроме текущего</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Collapse all except for the current</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все уровни, кроме текущего</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Collapses all levels excepting the current</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаСвернутьВсеКромеТекущей</Action>
+		</Command>
+		<Command name="КнопкаВыбрать" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Select</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КнопкаВыбрать</Action>
+		</Command>
+		<Command name="КнопкаОтметитьВсе" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>All</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Check all</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкиОтметить</Action>
+		</Command>
+		<Command name="КнопкаСнятьВсе" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>All</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Uncheck all</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкиСнять</Action>
+		</Command>
+		<Command name="КнопкаОтметитьОдинУровень" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Один уровень</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>One level</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить один уровень</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Chech one level</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкиОтметить</Action>
+		</Command>
+		<Command name="КнопкаСнятьОдинУровень" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Один уровень</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>One level</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять один уровень</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Uncheck one level</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкиСнять</Action>
+		</Command>
+		<Command name="КнопкаРазделЛичныеПапки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личные папки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>My folders</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к личным папкам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>To my folders</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаРазделЛичныеПапки</Action>
+		</Command>
+		<Command name="КнопкаРазделСправочник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочник</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Classifier</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к справочнику</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>To classifier</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаРазделСправочник</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0:9b656963-2851-49f5-9142-edb9cc3a158f</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

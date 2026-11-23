@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="c51383d6-1384-4d92-8214-c8f4b40d43c6">
+		<Name>ВозможныйАналог</Name>
+		<Code>004</Code>
+		<Description>Возможный аналог</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7e5e2739-5d16-4105-8aab-20710eb101d4">
+		<Name>КонструктивныйАналог</Name>
+		<Code>002</Code>
+		<Description>Конструктивный аналог</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6e79056c-7eab-49d2-840e-d9ee0d69637a">
+		<Name>ПолныйАналог</Name>
+		<Code>001</Code>
+		<Description>Полный аналог</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="45b69cd5-071f-4414-a72c-86d41a33b7dd">
+		<Name>ФункциональныйАналог</Name>
+		<Code>003</Code>
+		<Description>Функциональный аналог</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

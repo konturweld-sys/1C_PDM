@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="b7fb46c3-212a-4daf-ab5f-4a5ad64e3e1c">
+		<Name>КТС</Name>
+		<Code/>
+		<Description>КТС</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="fade8124-ad5f-4a66-82cf-cd6caaaa3fe1">
+				<Name>ПолучитьЭлементыРесурса</Name>
+				<Code/>
+				<Description>ПолучитьЭлементыРесурса()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="012cf0fe-41c9-46cb-b3cc-7c882f3da8f1">
+		<Name>Прочее</Name>
+		<Code/>
+		<Description>Прочее</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="55f8a8f2-31bc-4e70-b356-a0762ad03e10">
+				<Name>ВидСвязиИзделияТТП</Name>
+				<Code/>
+				<Description>ВидСвязиИзделияТТП</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d847f6a9-22c1-48e0-b222-2e5e53b51f87">
+				<Name>ВидСвязиКомплектование</Name>
+				<Code/>
+				<Description>ВидСвязиКомплектование</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7a64d6bb-cd08-454d-8f62-78bfc8b136eb">
+				<Name>ВидСвязиОперации</Name>
+				<Code/>
+				<Description>ВидСвязиОперации</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fd47a3bb-e2bb-4dcb-8847-8918ebc7973f">
+				<Name>ВидСвязиРесурсы</Name>
+				<Code/>
+				<Description>ВидСвязиРесурсы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="dfb9ceb9-212c-4d2b-8628-2608bfd6d507">
+				<Name>ВидСвязиСоставИзделия</Name>
+				<Code/>
+				<Description>ВидСвязиСоставИзделия</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7511342f-e4db-4adb-a5b3-483ef421cf46">
+				<Name>ТекущийОбъект</Name>
+				<Code/>
+				<Description>ТекущийОбъект</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8e946d47-2d98-4209-b5fb-b5c75828b6d8">
+		<Name>Параметры</Name>
+		<Code/>
+		<Description>Работа с параметрами</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="5aa05594-e630-40c7-8e4d-7245d2c574dc">
+				<Name>ЗначениеПараметраПолучить</Name>
+				<Code/>
+				<Description>ПолучитьЗначениеПараметра()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9acb8999-a06d-4c1c-891c-63ca80f17add">
+				<Name>ЗначениеПараметраУстановить</Name>
+				<Code/>
+				<Description>УстановитьЗначениеПараметра()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="1ce48bf5-3092-4d75-98a9-048b59607518">
+		<Name>СтруктураИзделия</Name>
+		<Code/>
+		<Description>Структура изделия</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="f4964d2c-18a9-4ca5-b12b-4bb92ad25785">
+				<Name>СоставИзделия</Name>
+				<Code/>
+				<Description>ПолучитьСоставИзделия()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="3a197ed3-ba0f-4121-9f0a-bcb46d48699a">
+		<Name>Технология</Name>
+		<Code/>
+		<Description>Технология</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="55549ac7-8004-4aad-902c-3c7009efca42">
+				<Name>ИзделияТТП</Name>
+				<Code/>
+				<Description>ПолучитьИзделияТТП()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="55198d89-d864-468b-9c82-c38e1fb3c7eb">
+				<Name>Комплектование</Name>
+				<Code/>
+				<Description>ПолучитьКомплектование()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="740eddf5-8c66-4bbe-9493-73443e3dde9e">
+				<Name>Операции</Name>
+				<Code/>
+				<Description>ПолучитьОперации()</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

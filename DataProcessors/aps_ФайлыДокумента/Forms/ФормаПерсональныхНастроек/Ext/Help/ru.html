@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 8.00.6001.18813"></meta></head><body>
+<p>Электронная цифровая подпись (ЭЦП) — последовательность данных, полученная в результате криптографического преобразования исходной информации с использованием закрытого ключа ЭЦП, которая позволяет подтверждать целостность и неизменность этой информации, а также ее авторство при условии использования открытого ключа ЭЦП и его сертификата.</p>
+<p>Для работы с ЭЦП необходимо наличие сертификата в хранилище личных сертификатов.</p>
+<p><em><strong>Сертификат</strong> — это набор данных, содержащий сам открытый ключ и всю информацию о нем: кто владелец, когда ключ создан, назначение ключа (подпись или обмен), для какого алгоритма предназначен ключ и т.д.</em></p>
+<p>Может быть создан самоподписанный сертификат, а так же получен от удостоверяющего центра и установлен в системе. Хранение закрытых ключей может происходить в ключевом контейнере (в файле специального формата) и на внешнем устройстве.</p>
+<p>В случае установленной высокой степени защиты в поле <strong>Пароль к закрытому ключу</strong> необходимо ввести пин-код к контейнеру закрытого ключа. </p>
+<p>В поле <strong>Криптопровайдер</strong> указывается библиотека функций, в которой реализованы непосредственно криптографические алгоритмы. Выбранный тип криптопровайдера будет использован при шифровании данных. В составе операционной системы Windows имеется несколько стандартных криптопровайдеров, которые реализуют наиболее часто используемые методы шифрования.</p>
+<p></p>
+<table border="1" rules="cols" cellspacing="0" bordercolor="#cccccc" cellpadding="2" width="100%" frame="hsides" height="0%"><tbody><tr bgcolor="#cccccc"><td height="5%" valign="top" width="25%">
+<p class="maintext style46" align="center"><strong>Наименование провайдера </strong></p></td>
+<td valign="top" width="75%">
+<p class="maintext style46" align="center"><strong>Описание </strong></p></td></tr><tr><td height="13%" valign="top">
+<p class="maintext">Microsoft Base Cryptographic Provider v1.0 </p></td>
+<td valign="top">
+<p class="maintext">Базовый провайдер службы шифрования в операционной системе Windows. Поддерживает полный спектр всех функций криптографии. </p></td></tr><tr><td height="17%" valign="top">
+<p class="maintext">Microsoft Base DSS Cryptographic Provider </p></td>
+<td valign="top">
+<p class="maintext">Этот компонент поддерживает только функции хэширования, оформления цифровой подписи и проверки ее достоверности и не реализует функции шифрования. </p></td></tr><tr><td height="18%" valign="top">
+<p class="maintext">Microsoft Enhanced Cryptographic Provider v1.0 <b>  </b></p></td>
+<td valign="top">
+<p class="maintext">Этот компонент поддерживает функционирование тех же алгоритмов, что и Micrisoft Base Cryptographic Provider, но использует при этом более длинные ключи и дополнительные алгоритмы.</p></td></tr></tbody></table><p> </p></body></html>

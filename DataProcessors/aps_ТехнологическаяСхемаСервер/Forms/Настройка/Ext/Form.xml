@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="ГруппаСтраниц" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<Page name="Общие" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОбщиеРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="ERPКонстантыERPКорпСекундВЗначенииВремени" id="7">
+							<DataPath>ERPКонстанты.aps_ТехСхемаСекундВЗначенииВремени</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент для приведения к секундам</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ERPКонстантыERPКорпСекундВЗначенииВремениКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпСекундВЗначенииВремениРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<LabelDecoration name="Декорация7" id="37">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент приведения времени, заданного в полях штучного и подготовительно-закл. времени  к секундам. Если не задан, принимается системой равным 60.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация7КонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="45"/>
+						</LabelDecoration>
+						<CheckBoxField name="ERPКонстантыERPКорпКэшироватьСостав" id="17">
+							<DataPath>ERPКонстанты.aps_ТехСхемаКэшироватьСостав</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кэшировать не только технологию, но и состав</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ERPКонстантыERPКорпКэшироватьСоставКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпКэшироватьСоставРасширеннаяПодсказка" id="46"/>
+						</CheckBoxField>
+						<CheckBoxField name="ERPКонстантыERPКорпИгнорироватьОшибки" id="11">
+							<DataPath>ERPКонстанты.aps_ТехСхемаИгнорироватьОшибки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игнорировать ошибки при построении кэша</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ERPКонстантыERPКорпИгнорироватьОшибкиКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпИгнорироватьОшибкиРасширеннаяПодсказка" id="47"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="Многозадачность" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Многозадачность</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Многозадачность</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="МногозадачностьРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="ERPКонстантыERPКорпЧислоПотоковОбработки" id="15">
+							<DataPath>ERPКонстанты.aps_ТехСхемаЧислоПотоковОбработки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Число параллельных процессов обработки</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ERPКонстантыERPКорпЧислоПотоковОбработкиКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпЧислоПотоковОбработкиРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<LabelDecoration name="Декорация1" id="23">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задает число одновременно создаваемых системой потоков, необходимых для формирования кэширующего состава, или при создании спецификаций. Желательно установить значение близкое к числу рабочих процессов сервера.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="50"/>
+						</LabelDecoration>
+						<InputField name="ERPКонстантыERPКорпКоэффициентПараллельностиСозданияСпецификаций" id="13">
+							<DataPath>ERPКонстанты.aps_ТехСхемаКоэффициентПараллельностиСозданияСпецификаций</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Число изделий для включения параллельности</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ERPКонстантыERPКорпКоэффициентПараллельностиСозданияСпецификацийКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпКоэффициентПараллельностиСозданияСпецификацийРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<LabelDecoration name="Декорация2" id="25">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Число обрабатываемых элементов, при котором система задействует многопоточную обработку. Определяется производительностью сервера. Желательно указывать значение более 200.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="52"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СпецификацииИТехкарты" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификации и техкарты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификации и техкарты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СпецификацииИТехкартыРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<InputField name="ERPКонстантыERPКорпПараметрУзла" id="19">
+							<DataPath>ERPКонстанты.aps_ТехСхемаПараметрУзла</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметр для идентификации того, что ДСЕ является непланируемым узлом</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ERPКонстантыERPКорпПараметрУзлаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпПараметрУзлаРасширеннаяПодсказка" id="54"/>
+						</InputField>
+						<LabelDecoration name="Декорация3" id="28">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При наличии данного параметра у изделия и установке его в значение Истина, при создании спецификаций система создает спецификацию вида "Узел". Параметр должен иметь тип Булево.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="55"/>
+						</LabelDecoration>
+						<CheckBoxField name="ERPКонстантыERPКорпИспользоватьВидВоспроизводства" id="5">
+							<DataPath>ERPКонстанты.aps_ТехСхемаИспользоватьВидВоспроизводства</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать заполнение спецификаций в исходных комплектующих</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ERPКонстантыERPКорпИспользоватьВидВоспроизводстваКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпИспользоватьВидВоспроизводстваРасширеннаяПодсказка" id="56"/>
+						</CheckBoxField>
+						<LabelDecoration name="Декорация4" id="30">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рекомендуется для установки. При установленном флаге система будет производить поиск ранее созданных спецификаций и устанавливать их для исходных коммплектующих вновь формируемых.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="57"/>
+						</LabelDecoration>
+						<CheckBoxField name="ERPКонстантыERPКорпСоздаватьВГруппеНоменклатуры" id="9">
+							<DataPath>ERPКонстанты.aps_ТехСхемаСоздаватьВГруппеНоменклатуры</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создавать спецификации в группах номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ERPКонстантыERPКорпСоздаватьВГруппеНоменклатурыКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпСоздаватьВГруппеНоменклатурыРасширеннаяПодсказка" id="58"/>
+						</CheckBoxField>
+						<LabelDecoration name="Декорация5" id="32">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Спецификации и техкарты будут созданы в группах, аналогичных группам номенклатуры.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация5КонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="59"/>
+						</LabelDecoration>
+						<CheckBoxField name="ERPКонстантыERPКорпПередаватьТолькоАрхивные" id="3">
+							<DataPath>ERPКонстанты.aps_ТехСхемаПередаватьТолькоАрхивные</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создавать спецификации только на архивные элементы</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ERPКонстантыERPКорпПередаватьТолькоАрхивныеКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпПередаватьТолькоАрхивныеРасширеннаяПодсказка" id="60"/>
+						</CheckBoxField>
+						<LabelDecoration name="Декорация6" id="34">
+							<TextColor>web:RoyalBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Спецификации и техкарты будут созданы только на архивные элементы.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация6КонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="61"/>
+						</LabelDecoration>
+						<CheckBoxField name="ERPКонстантыERPКорпФормироватьПоСоставу" id="1">
+							<DataPath>ERPКонстанты.aps_ТехСхемаФормироватьПоСоставу</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать состав изделия, даже при наличии технологии</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ERPКонстантыERPКорпФормироватьПоСоставуКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ERPКонстантыERPКорпФормироватьПоСоставуРасширеннаяПодсказка" id="62"/>
+						</CheckBoxField>
+						<InputField name="aps_ТехСхемаСтатьяКалькуляцииКомплектующие" id="64">
+							<DataPath>ERPКонстанты.aps_ТехСхемаСтатьяКалькуляцииКомплектующие</DataPath>
+							<ContextMenu name="aps_ТехСхемаСтатьяКалькуляцииКомплектующиеКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="aps_ТехСхемаСтатьяКалькуляцииКомплектующиеРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="aps_ТехСхемаСтатьяКалькуляцииТрудовыеЗатраты" id="67">
+							<DataPath>ERPКонстанты.aps_ТехСхемаСтатьяКалькуляцииТрудовыеЗатраты</DataPath>
+							<ContextMenu name="aps_ТехСхемаСтатьяКалькуляцииТрудовыеЗатратыКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="aps_ТехСхемаСтатьяКалькуляцииТрудовыеЗатратыРасширеннаяПодсказка" id="69"/>
+						</InputField>
+						<InputField name="aps_ТехСхемаСтатьяКалькуляцииПолуфабрикатыПроизводимыеВПроцессе" id="70">
+							<DataPath>ERPКонстанты.aps_ТехСхемаСтатьяКалькуляцииПолуфабрикатыПроизводимыеВПроцессе</DataPath>
+							<ContextMenu name="aps_ТехСхемаСтатьяКалькуляцииПолуфабрикатыПроизводимыеВПроцессеКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="aps_ТехСхемаСтатьяКалькуляцииПолуфабрикатыПроизводимыеВПроцессеРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<InputField name="aps_ТехСхемаСтатьяКалькуляцииПолуфабрикаты" id="73">
+							<DataPath>ERPКонстанты.aps_ТехСхемаСтатьяКалькуляцииПолуфабрикаты</DataPath>
+							<ContextMenu name="aps_ТехСхемаСтатьяКалькуляцииПолуфабрикатыКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="aps_ТехСхемаСтатьяКалькуляцииПолуфабрикатыРасширеннаяПодсказка" id="75"/>
+						</InputField>
+						<RadioButtonField name="ERPКорпНаименованиеСпецификации" id="40">
+							<DataPath>ERPКонстанты.aps_ТехСхемаНаименованиеСпецификации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В наименование помещать</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Представление маршрута/техпроцесса</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Представление изделия</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Представление номенклатуры (характеристики)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ERPКорпНаименованиеСпецификацииКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ERPКорпНаименованиеСпецификацииРасширеннаяПодсказка" id="63"/>
+						</RadioButtonField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ERPКонстанты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ERPКонстанты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>ERPКонстанты.aps_ТехСхемаИгнорироватьОшибки</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаИспользоватьВидВоспроизводства</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаКоэффициентПараллельностиСозданияСпецификаций</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаКэшироватьСостав</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаПараметрУзла</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаПередаватьТолькоАрхивные</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаСекундВЗначенииВремени</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаСоздаватьВГруппеНоменклатуры</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаФормироватьПоСоставу</Field>
+				<Field>ERPКонстанты.aps_ТехСхемаЧислоПотоковОбработки</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

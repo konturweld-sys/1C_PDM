@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="f3a0e05f-de83-478d-8546-3620145c45f4">
+		<Name>ВидыТехнологическихОпераций</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Виды технологических операций</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="64d15a19-8edf-4f2a-8f4e-ade412eeb29e">
+		<Name>Материалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Материалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="108eb24d-c1a3-4840-986f-a6279baa80ed">
+		<Name>Нормирование</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Нормирование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0e89ee8b-ff36-4b92-bac4-57d091618e9e">
+		<Name>СредстваОснащения</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Средства технологического оснащения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="079e0c2b-4237-4f8b-a127-5fc9096b788d">
+		<Name>СтПрИзделия</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Стандартные и прочие изделия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5fe7da25-d744-4a1b-b894-4ebdfecddd90">
+		<Name>ЭлектроРадиоЭлементы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Электро-радио элементы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

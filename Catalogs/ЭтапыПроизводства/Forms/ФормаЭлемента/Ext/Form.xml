@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="148">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="149"/>
+			<ChildItems>
+				<InputField name="Владелец" id="4">
+					<DataPath>Объект.Owner</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="НомерЭтапа" id="19">
+					<DataPath>Объект.НомерЭтапа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерЭтапаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="НомерЭтапаРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="НомерСледующегоЭтапа" id="16">
+					<DataPath>Объект.НомерСледующегоЭтапа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерСледующегоЭтапаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НомерСледующегоЭтапаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ПроизводствоНаСтороне" id="119">
+			<DataPath>Объект.ПроизводствоНаСтороне</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПроизводствоНаСторонеКонтекстноеМеню" id="120"/>
+			<ExtendedTooltip name="ПроизводствоНаСторонеРасширеннаяПодсказка" id="121"/>
+			<Events>
+				<Event name="OnChange">ПроизводствоНаСторонеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Подразделение" id="31">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Описание" id="25">
+			<DataPath>Объект.Описание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<UsualGroup name="ГруппаПроизводствоНаСтороне" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуга по переработке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа производство на стороне</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПроизводствоНаСторонеРасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<InputField name="Партнер" id="131">
+					<DataPath>Объект.Партнер</DataPath>
+					<ContextMenu name="ПартнерКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="УслугаПереработчика" id="122">
+					<DataPath>Объект.УслугаПереработчика</DataPath>
+					<ContextMenu name="УслугаПереработчикаКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="УслугаПереработчикаРасширеннаяПодсказка" id="124"/>
+				</InputField>
+				<InputField name="ХарактеристикаУслугиПереработчика" id="125">
+					<DataPath>Объект.ХарактеристикаУслугиПереработчика</DataPath>
+					<ContextMenu name="ХарактеристикаУслугиПереработчикаКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ХарактеристикаУслугиПереработчикаРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="СтатьяКалькуляции" id="128">
+					<DataPath>Объект.СтатьяКалькуляции</DataPath>
+					<ContextMenu name="СтатьяКалькуляцииКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="СтатьяКалькуляцииРасширеннаяПодсказка" id="130"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНеПроизводствоНаСтороне" id="134">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа не производство на стороне</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа не производство на стороне</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНеПроизводствоНаСторонеРасширеннаяПодсказка" id="135"/>
+			<ChildItems>
+				<InputField name="МаршрутнаяКарта" id="13">
+					<DataPath>Объект.МаршрутнаяКарта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МаршрутнаяКартаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="МаршрутнаяКартаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="МаксимальноеКоличествоЕдиницПартийИзделия" id="10">
+					<DataPath>Объект.МаксимальноеКоличествоЕдиницПартийИзделия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МаксимальноеКоличествоЕдиницПартийИзделияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="МаксимальноеКоличествоЕдиницПартийИзделияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<CheckBoxField name="ПланироватьРаботуВидовРабочихЦентров" id="28">
+					<DataPath>Объект.ПланироватьРаботуВидовРабочихЦентров</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПланироватьРаботуВидовРабочихЦентровКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПланироватьРаботуВидовРабочихЦентровРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ПланироватьРаботуВидовРабочихЦентровПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаПланироватьРаботуВидовРабочихЦентров" id="156">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа планировать работу видов рабочих центров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа планировать работу видов рабочих центров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПланироватьРаботуВидовРабочихЦентровРасширеннаяПодсказка" id="157"/>
+					<ChildItems>
+						<Pages name="Страницы" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="41"/>
+							<ChildItems>
+								<Page name="ГруппаВидыРабочихЦентров" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды рабочих центров</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаВидыРабочихЦентровРасширеннаяПодсказка" id="43"/>
+									<ChildItems>
+										<Table name="ВидыРабочихЦентров" id="44">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ВидыРабочихЦентров</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ВидыРабочихЦентровКонтекстноеМеню" id="45"/>
+											<AutoCommandBar name="ВидыРабочихЦентровКоманднаяПанель" id="46"/>
+											<ExtendedTooltip name="ВидыРабочихЦентровРасширеннаяПодсказка" id="47"/>
+											<SearchStringAddition name="ВидыРабочихЦентровСтрокаПоиска" id="48">
+												<AdditionSource>
+													<Item>ВидыРабочихЦентров</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВидыРабочихЦентровСтрокаПоискаКонтекстноеМеню" id="51"/>
+												<ExtendedTooltip name="ВидыРабочихЦентровСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ВидыРабочихЦентровСостояниеПросмотра" id="53">
+												<AdditionSource>
+													<Item>ВидыРабочихЦентров</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВидыРабочихЦентровСостояниеПросмотраКонтекстноеМеню" id="56"/>
+												<ExtendedTooltip name="ВидыРабочихЦентровСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ВидыРабочихЦентровУправлениеПоиском" id="58">
+												<AdditionSource>
+													<Item>ВидыРабочихЦентров</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ВидыРабочихЦентровУправлениеПоискомКонтекстноеМеню" id="61"/>
+												<ExtendedTooltip name="ВидыРабочихЦентровУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ВидыРабочихЦентровНомерСтроки" id="63">
+													<DataPath>Объект.ВидыРабочихЦентров.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВидыРабочихЦентровНомерСтрокиКонтекстноеМеню" id="64"/>
+													<ExtendedTooltip name="ВидыРабочихЦентровНомерСтрокиРасширеннаяПодсказка" id="65"/>
+												</LabelField>
+												<InputField name="ВидыРабочихЦентровВидРабочегоЦентра" id="66">
+													<DataPath>Объект.ВидыРабочихЦентров.ВидРабочегоЦентра</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВидыРабочихЦентровВидРабочегоЦентраКонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="ВидыРабочихЦентровВидРабочегоЦентраРасширеннаяПодсказка" id="68"/>
+												</InputField>
+												<InputField name="ВидыРабочихЦентровВремяРаботы" id="69">
+													<DataPath>Объект.ВидыРабочихЦентров.ВремяРаботы</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВидыРабочихЦентровВремяРаботыКонтекстноеМеню" id="70"/>
+													<ExtendedTooltip name="ВидыРабочихЦентровВремяРаботыРасширеннаяПодсказка" id="71"/>
+												</InputField>
+												<InputField name="ВидыРабочихЦентровЕдиницаИзмерения" id="72">
+													<DataPath>Объект.ВидыРабочихЦентров.ЕдиницаИзмерения</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВидыРабочихЦентровЕдиницаИзмеренияКонтекстноеМеню" id="73"/>
+													<ExtendedTooltip name="ВидыРабочихЦентровЕдиницаИзмеренияРасширеннаяПодсказка" id="74"/>
+												</InputField>
+												<InputField name="ВидыРабочихЦентровЗагрузка" id="75">
+													<DataPath>Объект.ВидыРабочихЦентров.Загрузка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВидыРабочихЦентровЗагрузкаКонтекстноеМеню" id="76"/>
+													<ExtendedTooltip name="ВидыРабочихЦентровЗагрузкаРасширеннаяПодсказка" id="77"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаАльтернативныеВидыРабочихЦентров" id="78">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Альтернативные виды рабочих центров</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаАльтернативныеВидыРабочихЦентровРасширеннаяПодсказка" id="79"/>
+									<ChildItems>
+										<Table name="АльтернативныеВидыРабочихЦентров" id="80">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.АльтернативныеВидыРабочихЦентров</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="АльтернативныеВидыРабочихЦентровКонтекстноеМеню" id="81"/>
+											<AutoCommandBar name="АльтернативныеВидыРабочихЦентровКоманднаяПанель" id="82"/>
+											<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровРасширеннаяПодсказка" id="83"/>
+											<SearchStringAddition name="АльтернативныеВидыРабочихЦентровСтрокаПоиска" id="84">
+												<AdditionSource>
+													<Item>АльтернативныеВидыРабочихЦентров</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АльтернативныеВидыРабочихЦентровСтрокаПоискаКонтекстноеМеню" id="87"/>
+												<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровСтрокаПоискаРасширеннаяПодсказка" id="88"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="АльтернативныеВидыРабочихЦентровСостояниеПросмотра" id="89">
+												<AdditionSource>
+													<Item>АльтернативныеВидыРабочихЦентров</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АльтернативныеВидыРабочихЦентровСостояниеПросмотраКонтекстноеМеню" id="92"/>
+												<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="АльтернативныеВидыРабочихЦентровУправлениеПоиском" id="94">
+												<AdditionSource>
+													<Item>АльтернативныеВидыРабочихЦентров</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="АльтернативныеВидыРабочихЦентровУправлениеПоискомКонтекстноеМеню" id="97"/>
+												<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровУправлениеПоискомРасширеннаяПодсказка" id="98"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="АльтернативныеВидыРабочихЦентровНомерСтроки" id="99">
+													<DataPath>Объект.АльтернативныеВидыРабочихЦентров.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АльтернативныеВидыРабочихЦентровНомерСтрокиКонтекстноеМеню" id="100"/>
+													<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровНомерСтрокиРасширеннаяПодсказка" id="101"/>
+												</LabelField>
+												<InputField name="АльтернативныеВидыРабочихЦентровВидРабочегоЦентра" id="102">
+													<DataPath>Объект.АльтернативныеВидыРабочихЦентров.ВидРабочегоЦентра</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АльтернативныеВидыРабочихЦентровВидРабочегоЦентраКонтекстноеМеню" id="103"/>
+													<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровВидРабочегоЦентраРасширеннаяПодсказка" id="104"/>
+												</InputField>
+												<InputField name="АльтернативныеВидыРабочихЦентровВремяРаботы" id="105">
+													<DataPath>Объект.АльтернативныеВидыРабочихЦентров.ВремяРаботы</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АльтернативныеВидыРабочихЦентровВремяРаботыКонтекстноеМеню" id="106"/>
+													<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровВремяРаботыРасширеннаяПодсказка" id="107"/>
+												</InputField>
+												<InputField name="АльтернативныеВидыРабочихЦентровЕдиницаИзмерения" id="108">
+													<DataPath>Объект.АльтернативныеВидыРабочихЦентров.ЕдиницаИзмерения</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АльтернативныеВидыРабочихЦентровЕдиницаИзмеренияКонтекстноеМеню" id="109"/>
+													<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровЕдиницаИзмеренияРасширеннаяПодсказка" id="110"/>
+												</InputField>
+												<InputField name="АльтернативныеВидыРабочихЦентровЗагрузка" id="111">
+													<DataPath>Объект.АльтернативныеВидыРабочихЦентров.Загрузка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АльтернативныеВидыРабочихЦентровЗагрузкаКонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="АльтернативныеВидыРабочихЦентровЗагрузкаРасширеннаяПодсказка" id="113"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="Группа3" id="152">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="153"/>
+							<ChildItems>
+								<InputField name="ПредварительныйБуфер" id="136">
+									<DataPath>Объект.ПредварительныйБуфер</DataPath>
+									<ContextMenu name="ПредварительныйБуферКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ПредварительныйБуферРасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="ЕдиницаИзмеренияПредварительногоБуфера" id="34">
+									<DataPath>Объект.ЕдиницаИзмеренияПредварительногоБуфера</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЕдиницаИзмеренияПредварительногоБуфераКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ЕдиницаИзмеренияПредварительногоБуфераРасширеннаяПодсказка" id="36"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="154">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="155"/>
+							<ChildItems>
+								<InputField name="ЗавершающийБуфер" id="139">
+									<DataPath>Объект.ЗавершающийБуфер</DataPath>
+									<ContextMenu name="ЗавершающийБуферКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ЗавершающийБуферРасширеннаяПодсказка" id="141"/>
+								</InputField>
+								<InputField name="ЕдиницаИзмеренияЗавершающегоБуфера" id="37">
+									<DataPath>Объект.ЕдиницаИзмеренияЗавершающегоБуфера</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЕдиницаИзмеренияЗавершающегоБуфераКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ЕдиницаИзмеренияЗавершающегоБуфераРасширеннаяПодсказка" id="39"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ОдновременноПроизводимоеКоличествоЕдиницПартийИзделий" id="22">
+							<DataPath>Объект.ОдновременноПроизводимоеКоличествоЕдиницПартийИзделий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОдновременноПроизводимоеКоличествоЕдиницПартийИзделийКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ОдновременноПроизводимоеКоличествоЕдиницПартийИзделийРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<CheckBoxField name="Непрерывный" id="142">
+							<DataPath>Объект.Непрерывный</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НепрерывныйКонтекстноеМеню" id="143"/>
+							<ExtendedTooltip name="НепрерывныйРасширеннаяПодсказка" id="144"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНеПланироватьРаботуВидовРабочихЦентров" id="150">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа не планировать работу видов рабочих центров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа не планировать работу видов рабочих центров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНеПланироватьРаботуВидовРабочихЦентровРасширеннаяПодсказка" id="151"/>
+			<ChildItems>
+				<InputField name="ДлительностьЭтапа" id="7">
+					<DataPath>Объект.ДлительностьЭтапа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДлительностьЭтапаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДлительностьЭтапаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ЕдиницаИзмеренияДлительностиЭтапа" id="114">
+					<DataPath>Объект.ЕдиницаИзмеренияДлительностиЭтапа</DataPath>
+					<ContextMenu name="ЕдиницаИзмеренияДлительностиЭтапаКонтекстноеМеню" id="115"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияДлительностиЭтапаРасширеннаяПодсказка" id="116"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЭтапыПроизводства</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

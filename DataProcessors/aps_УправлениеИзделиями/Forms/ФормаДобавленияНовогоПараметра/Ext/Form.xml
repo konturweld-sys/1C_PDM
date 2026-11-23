@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПараметрЭлемента" id="5">
+			<Width>24</Width>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрЭлементаРасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаПараметрЭлемента" id="7">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.aps_Параметр</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаПараметрЭлементаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="КартинкаПараметрЭлементаРасширеннаяПодсказка" id="16"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПараметрЭлемента" id="1">
+					<Height>1</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>web:RoyalBlue</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить к элементу...</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Add to item...</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ПараметрЭлементаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПараметрЭлементаРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="Click">ДобавитьНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация1" id="11">
+			<Height>1</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр будет добавлен непосредственно к элементу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Parameter will be added to item directly</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="18"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПараметрСвязи" id="6">
+			<Width>24</Width>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрСвязиРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаПараметрСвязи" id="9">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.aps_ПараметрСвязи</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаПараметрСвязиКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="КартинкаПараметрСвязиРасширеннаяПодсказка" id="20"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПараметрСвязи" id="3">
+					<Height>1</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>web:RoyalBlue</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить в контексте применяемости...</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Add in the occurrence context...</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ПараметрСвязиКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ПараметрСвязиРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="Click">ДобавитьНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="13">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр будет добавлен к элементу в контексте данной применяемости</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Parameter will be added to item in the context of this occurrence</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="22"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes/>
+	<Parameters>
+		<Parameter name="Свойство">
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.aps_Свойства</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

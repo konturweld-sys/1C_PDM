@@ -1,0 +1,45 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://appius.ru/pdm">
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
+	<valueType xmlns:d2p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="typeElement" variety="Union" memberTypes="d2p1:CatalogRef.aps_ЭлементыИзделия d2p1:CatalogRef.aps_ЭлементыСправочников d2p1:CatalogRef.aps_ЭлементыТехнологии"/>
+	<valueType xmlns:d2p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="typeLink" variety="Union" memberTypes="d2p1:CatalogRef.aps_ЭлементыСвязей d2p1:CatalogRef.aps_ВертикальныеСвязи"/>
+	<valueType xmlns:d2p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="typeLinkType" variety="Union" memberTypes="d2p1:CatalogRef.aps_ШаблоныТехнологическихСвязей d2p1:EnumRef.aps_ВидыСвязей"/>
+	<valueType xmlns:d2p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="typeParameter" variety="Union" memberTypes="d2p1:CatalogRef.aps_ПараметрыЭлементовИзделия d2p1:CatalogRef.aps_ПараметрыЭлементовТехнологии"/>
+	<valueType xmlns:d2p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="typeUID" variety="Union" memberTypes="d2p1:CatalogRef.Пользователи d2p1:CatalogRef.ГруппыПользователей d2p1:EnumRef.aps_СистемныеГруппы"/>
+	<valueType xmlns:d2p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="typePresentation" variety="Union" memberTypes="xs:string d2p1:CatalogRef.aps_ПараметрыЭлементовИзделия d2p1:CatalogRef.aps_ПараметрыЭлементовТехнологии"/>
+	<objectType name="item" ordered="false">
+		<property name="refLinkGroup" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="element" type="d3p1:typeElement" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="elementType" type="d3p1:CatalogRef.aps_ВидыЭлементов" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="link" type="d3p1:typeLink" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="linkType" type="d3p1:typeLinkType" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="items" type="d3p1:item" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="parameters" type="d3p1:parameter" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="presentation" type="d3p1:typePresentation" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="viewTemplate" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="editTemplate" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="actionTemplate" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="UID" type="d3p1:typeUID" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="GID" type="d3p1:typeUID" lowerBound="0" nillable="true"/>
+		<property name="description" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="htmlContent" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="refContent" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="pictureBinaryData" type="xs:base64Binary" lowerBound="0" nillable="true"/>
+		<property name="pictureIndex" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="sequenceNumber" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="created" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="added" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="replaced" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="deleted" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="modified" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="revised" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="parameter" ordered="false">
+		<property xmlns:d3p1="http://appius.ru/pdm" name="reference" type="d3p1:typeParameter"/>
+		<property name="description" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="property" type="d3p1:ChartOfCharacteristicTypesRef.aps_Свойства" lowerBound="0" nillable="true"/>
+		<property name="value" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="unit" type="d3p1:CatalogRef.КлассификаторЕдиницИзмерения" lowerBound="0" nillable="true"/>
+		<property name="linkParameter" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://appius.ru/pdm" name="parameters" type="d3p1:parameter" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+</package>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="f30fc206-e65e-49cb-b555-08c3c9637687">
+		<Name>ДескрипторыКТС</Name>
+		<Code/>
+		<Description>Дескрипторы доступа к КТС</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="0db99804-a87c-44aa-9349-ee20d9dcdf1d">
+				<Name>ВидыОпераций</Name>
+				<Code/>
+				<Description>Виды операций</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b9076654-d32d-43bd-8cbc-89cf9044b815">
+				<Name>Материалы</Name>
+				<Code/>
+				<Description>Материалы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="256020e9-3fdf-4aa5-9c82-7250b546a2d1">
+				<Name>СредстваОснащения</Name>
+				<Code/>
+				<Description>Средства технологического оснащения</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="37bf1b12-422f-4903-b932-9cf4eb237662">
+				<Name>СтПрИзделия</Name>
+				<Code/>
+				<Description>Стандартные и прочие изделия</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5b0facc0-e413-4e5d-999b-cb8c28aeac0c">
+				<Name>ЭРИ</Name>
+				<Code/>
+				<Description>Электро-радио элементы</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="21937b9d-3055-4692-927c-15ca477612a4">
+				<Name>Нормирование</Name>
+				<Code/>
+				<Description>Нормирование</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="63cea097-cd57-46b9-bdd3-c59328b09a98">
+		<Name>ДескрипторыСистемныхГрупп</Name>
+		<Code/>
+		<Description>Дескрипторы доступа системных групп</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="7389007d-aa1e-452b-abe0-e9ba41f78800">
+				<Name>ПереходВАрхив</Name>
+				<Code/>
+				<Description>Переход в архив</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e5ffbfdb-d53e-450a-a214-79bd88f959f2">
+				<Name>ПереходВНеиспользуемый</Name>
+				<Code/>
+				<Description>Переход в неиспользуемый</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="51878ca6-b042-4d88-91d4-8a0dae925855">
+				<Name>ПереходНаСогласование</Name>
+				<Code/>
+				<Description>Переход на согласование</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a281011e-f54e-4bf1-b335-784db47c58ad">
+		<Name>ДескрипторыОбъектнойПолитики</Name>
+		<Code/>
+		<Description>Дескрипторы объектной политики</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2eacb680-49a3-4c0f-a8ef-903cb692d3e5">
+				<Name>ВысокаяБезопасностьВладельца</Name>
+				<Code/>
+				<Description>Высокая безопасность владельца</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2adc4314-9aea-4551-a84a-1e20b02ad3bc">
+				<Name>НеобходимаяБезопасностьВладельца</Name>
+				<Code/>
+				<Description>Необходимая безопасность владельца</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="659e85c3-4769-4d3e-8c61-c46bc19a29b5">
+				<Name>НизкаяБезопасностьВладельца</Name>
+				<Code/>
+				<Description>Низкая безопасность владельца</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="beeabe24-5da3-4d51-990c-b671c0a1109f">
+		<Name>ДескрипторыПараметров</Name>
+		<Code/>
+		<Description>Дескрипторы параметров</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2cda57d2-01f8-4a93-a1d2-1b0673a1dd9b">
+				<Name>ДескрипторПараметраСостояние</Name>
+				<Code/>
+				<Description>Дескриптор параметра состояние</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

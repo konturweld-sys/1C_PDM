@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="bb54f382-fcb4-4aa4-9ca4-4f79fca68e29">
+		<Name>СобытияИнтерфейса</Name>
+		<Code/>
+		<Description>События интерфейса</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="26a32eff-a59b-4d90-8b43-890dfba6bfb9">
+		<Name>СобытияНазначенияГрупповыхПолитик</Name>
+		<Code/>
+		<Description>События назначения групповых политик</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="ccfcd69b-32c6-4e9d-891c-bb59eb113745">
+		<Name>СобытияНазначенияОбъектныхПолитик</Name>
+		<Code/>
+		<Description>События назначения объектных политик</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="896fb344-8a63-45bb-ab78-cb670ff153f1">
+		<Name>СобытияСостояний</Name>
+		<Code/>
+		<Description>События состояний</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="d1820212-6529-442a-8f24-d954b1e57f8a">
+		<Name>СозданиеПараметра</Name>
+		<Code/>
+		<Description>Создание нового параметра</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="832d2881-01c9-499b-ae89-a829dde95e91">
+		<Name>СозданиеЭлемента</Name>
+		<Code/>
+		<Description>Создание нового элемента</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

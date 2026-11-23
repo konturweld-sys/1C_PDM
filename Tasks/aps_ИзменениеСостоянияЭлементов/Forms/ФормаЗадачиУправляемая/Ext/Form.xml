@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Изменение состояний элементов</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en_US</v8:lang>
+			<v8:content>Change of items statuses</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКнопкаПеревестиЭлементы" id="12">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПеревестиЭлементы</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.aps_Готово</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Перевести элементы</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКнопкаПеревестиЭлементыРасширеннаяПодсказка" id="43"/>
+			</Button>
+			<Button name="ФормаКнопкаЗакрыть" id="34">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаЗакрытьРасширеннаяПодсказка" id="44"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Надпись" id="15">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внимание! Некоторые элементы не были переведены в целевое состояние.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Attention! Some items were not translated to the goal status.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="НадписьРасширеннаяПодсказка" id="45"/>
+		</LabelDecoration>
+		<LabelDecoration name="НадписьВыполнена" id="40">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все элементы переведены в целевое состояние.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>All the items were translated to the goal status.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьВыполненаКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="НадписьВыполненаРасширеннаяПодсказка" id="46"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа2" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Непереведенные элементы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Untranslated items</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<Table name="НепереведенныеЭлементы" id="1">
+					<ReadOnly>true</ReadOnly>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Состояния</DataPath>
+					<RowPictureDataPath>Объект.Состояния.ИндексКартинки</RowPictureDataPath>
+					<RowsPicture>
+						<xr:Ref>CommonPicture.aps_ВидыЭлементов</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</RowsPicture>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НепереведенныеЭлементыКонтекстноеМеню" id="2">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="КонтекстноеМенюКнопкаИнформация" id="25">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Информация</CommandName>
+								<ExtendedTooltip name="КонтекстноеМенюКнопкаИнформацияРасширеннаяПодсказка" id="48"/>
+							</Button>
+							<ButtonGroup name="НепереведенныеЭлементыКонтекстноеМенюГруппа" id="33">
+								<ExtendedTooltip name="НепереведенныеЭлементыКонтекстноеМенюГруппаРасширеннаяПодсказка" id="49"/>
+								<ChildItems>
+									<Popup name="КонтекстноеМенюГруппаОткрыть" id="26">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть...</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть...</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="КонтекстноеМенюГруппаОткрытьРасширеннаяПодсказка" id="50"/>
+										<ChildItems>
+											<Button name="КонтекстноеМенюКнопкаУправлениеИзделиями" id="27">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УправлениеИзделиями</CommandName>
+												<ExtendedTooltip name="КонтекстноеМенюКнопкаУправлениеИзделиямиРасширеннаяПодсказка" id="51"/>
+											</Button>
+											<Button name="КонтекстноеМенюКнопкаУправлениеТехнологией" id="28">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УправлениеТехнологиейИзготовления</CommandName>
+												<ExtendedTooltip name="КонтекстноеМенюКнопкаУправлениеТехнологиейРасширеннаяПодсказка" id="52"/>
+											</Button>
+											<Button name="КонтекстноеМенюКнопкаПроводник" id="29">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Проводник</CommandName>
+												<ExtendedTooltip name="КонтекстноеМенюКнопкаПроводникРасширеннаяПодсказка" id="53"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="КонтекстноеМенюКнопкаПраваДоступа" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПраваДоступа</CommandName>
+								<ExtendedTooltip name="КонтекстноеМенюКнопкаПраваДоступаРасширеннаяПодсказка" id="54"/>
+							</Button>
+							<Button name="КонтекстноеМенюКнопкаПрименяемость" id="31">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Применяемость</CommandName>
+								<ExtendedTooltip name="КонтекстноеМенюКнопкаПрименяемостьРасширеннаяПодсказка" id="55"/>
+							</Button>
+							<Button name="КонтекстноеМенюКнопкаФайлыДокумента" id="32">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ФайлыДокумента</CommandName>
+								<ExtendedTooltip name="КонтекстноеМенюКнопкаФайлыДокументаРасширеннаяПодсказка" id="56"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="НепереведенныеЭлементыКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="НепереведенныеЭлементыИнформация" id="17">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Информация</CommandName>
+								<ExtendedTooltip name="НепереведенныеЭлементыИнформацияРасширеннаяПодсказка" id="57"/>
+							</Button>
+							<Popup name="НепереведенныеЭлементыГруппаОткрыть" id="18">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Открыть...</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en_US</v8:lang>
+										<v8:content>Open in ...</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Открыть...</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en_US</v8:lang>
+										<v8:content>Open in interface</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="НепереведенныеЭлементыГруппаОткрытьРасширеннаяПодсказка" id="58"/>
+								<ChildItems>
+									<Button name="НепереведенныеЭлементыУправлениеИзделиями" id="19">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УправлениеИзделиями</CommandName>
+										<ExtendedTooltip name="НепереведенныеЭлементыУправлениеИзделиямиРасширеннаяПодсказка" id="59"/>
+									</Button>
+									<Button name="НепереведенныеЭлементыУправлениеТехнологиейИзготовления" id="20">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УправлениеТехнологиейИзготовления</CommandName>
+										<ExtendedTooltip name="НепереведенныеЭлементыУправлениеТехнологиейИзготовленияРасширеннаяПодсказка" id="60"/>
+									</Button>
+									<Button name="Проводник" id="21">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Проводник</CommandName>
+										<ExtendedTooltip name="ПроводникРасширеннаяПодсказка" id="61"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Button name="НепереведенныеЭлементыПраваДоступа" id="22">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПраваДоступа</CommandName>
+								<ExtendedTooltip name="НепереведенныеЭлементыПраваДоступаРасширеннаяПодсказка" id="62"/>
+							</Button>
+							<Button name="НепереведенныеЭлементыПрименяемость" id="23">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Применяемость</CommandName>
+								<ExtendedTooltip name="НепереведенныеЭлементыПрименяемостьРасширеннаяПодсказка" id="63"/>
+							</Button>
+							<Button name="НепереведенныеЭлементыФайлыДокумента" id="24">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ФайлыДокумента</CommandName>
+								<ExtendedTooltip name="НепереведенныеЭлементыФайлыДокументаРасширеннаяПодсказка" id="64"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="НепереведенныеЭлементыРасширеннаяПодсказка" id="65"/>
+					<SearchStringAddition name="НепереведенныеЭлементыСтрокаПоиска" id="66">
+						<AdditionSource>
+							<Item>НепереведенныеЭлементы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НепереведенныеЭлементыСтрокаПоискаКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="НепереведенныеЭлементыСтрокаПоискаРасширеннаяПодсказка" id="68"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НепереведенныеЭлементыСостояниеПросмотра" id="69">
+						<AdditionSource>
+							<Item>НепереведенныеЭлементы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НепереведенныеЭлементыСостояниеПросмотраКонтекстноеМеню" id="70"/>
+						<ExtendedTooltip name="НепереведенныеЭлементыСостояниеПросмотраРасширеннаяПодсказка" id="71"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НепереведенныеЭлементыУправлениеПоиском" id="72">
+						<AdditionSource>
+							<Item>НепереведенныеЭлементы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НепереведенныеЭлементыУправлениеПоискомКонтекстноеМеню" id="73"/>
+						<ExtendedTooltip name="НепереведенныеЭлементыУправлениеПоискомРасширеннаяПодсказка" id="74"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">НепереведенныеЭлементыВыбор</Event>
+						<Event name="OnActivateRow">НепереведенныеЭлементыПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="НепереведенныеЭлементыЭлементСсылка" id="6">
+							<DataPath>Объект.Состояния.ЭлементСсылка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НепереведенныеЭлементыЭлементСсылкаКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="НепереведенныеЭлементыЭлементСсылкаРасширеннаяПодсказка" id="75"/>
+						</InputField>
+						<InputField name="НепереведенныеЭлементыИсходноеСостояние" id="8">
+							<DataPath>Объект.Состояния.ИсходноеСостояние</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НепереведенныеЭлементыИсходноеСостояниеКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НепереведенныеЭлементыИсходноеСостояниеРасширеннаяПодсказка" id="76"/>
+						</InputField>
+						<InputField name="НепереведенныеЭлементыЦелевоеСостояние" id="10">
+							<DataPath>Объект.Состояния.ЦелевоеСостояние</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НепереведенныеЭлементыЦелевоеСостояниеКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="НепереведенныеЭлементыЦелевоеСостояниеРасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<InputField name="НепереведенныеЭлементыПричина" id="13">
+							<DataPath>Объект.Состояния.Причина</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НепереведенныеЭлементыПричинаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НепереведенныеЭлементыПричинаРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="39">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаБП" id="37">
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотреть состояние бизнес-процесса...</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Show process...</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<Picture>
+						<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаБПКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="КартинкаБПРасширеннаяПодсказка" id="80"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияБП" id="35">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотреть состояние бизнес-процесса...</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en_US</v8:lang>
+							<v8:content>Show process...</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияБПКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДекорацияБПРасширеннаяПодсказка" id="81"/>
+					<Events>
+						<Event name="Click">ДекорацияБПНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:TaskObject.aps_ИзменениеСостоянияЭлементов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.Состояния">
+					<Column name="ИндексКартинки" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Индекс картинки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en_US</v8:lang>
+								<v8:content>Picture index</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеревестиЭлементы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевести элементы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Translate items</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевести элементы в целевое состояние</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Translate items to the goal status</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеревестиЭлементы</Action>
+		</Command>
+		<Command name="Информация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Properties</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть окно свойств элемента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open item properties window</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_Свойства</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Информация</Action>
+		</Command>
+		<Command name="УправлениеИзделиями" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление структурой изделия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Product structure editor</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в окне управления структурой изделия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open in product structure editor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+S</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_СборочнаяЕдиница</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>УправлениеИзделиями</Action>
+		</Command>
+		<Command name="УправлениеТехнологиейИзготовления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление технологией</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Manufacturing editor</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в окне управления технологией изготовления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open in manufacturing editor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+T</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_ТехнологическийПроцесс</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="10" y="14"/>
+			</Picture>
+			<Action>УправлениеТехнологиейИзготовления</Action>
+		</Command>
+		<Command name="Проводник" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проводник</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Item explorer</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в проводнике PDM</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open in PDM explorer</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+E</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_Проводник</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Проводник</Action>
+		</Command>
+		<Command name="ПраваДоступа" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Права доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Security</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть окно прав доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open security window</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+R</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_ГрупповаяПолитика</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПраваДоступа</Action>
+		</Command>
+		<Command name="Применяемость" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применяемость</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Occurrences</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть окно применяемости</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open occurrences window</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+P</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_Применяемость</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Применяемость</Action>
+		</Command>
+		<Command name="ФайлыДокумента" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы и файлы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Documents and files</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть окно документов и файлов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Open documents and files window</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+F</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.aps_Файл</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ФайлыДокумента</Action>
+		</Command>
+	</Commands>
+</Form>

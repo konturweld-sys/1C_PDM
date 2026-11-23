@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="ddb665f2-2e49-4137-9168-793f675598ff">
+		<Name>АналогиМатериала</Name>
+		<Code>A24</Code>
+		<Description>Аналоги материала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="607c020c-e036-417f-adb1-043a2e062cd9">
+		<Name>АналогиОборудования</Name>
+		<Code>   </Code>
+		<Description>Аналоги оборудования</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fb422d44-ec9b-498a-b178-020248dcde0e">
+		<Name>АссоциативныеДокументы</Name>
+		<Code>   </Code>
+		<Description>Ассоциативные документы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ef3c8a7d-7864-4e76-be37-744e0dcbe988">
+		<Name>ВидОперацииОборудования</Name>
+		<Code>A23</Code>
+		<Description>Вид операции &lt;--&gt; Оборудование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b96db73b-8434-4b6c-a2c8-acb864b3a3e9">
+		<Name>Документы</Name>
+		<Code>   </Code>
+		<Description>Документы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="795cecf9-d9a1-437a-b595-f63d7a862993">
+		<Name>ДоступныеТипоразмеры</Name>
+		<Code>L21</Code>
+		<Description>Доступные типоразмеры</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a7b377e4-6f8e-4fee-9e74-18e97bc003cc">
+		<Name>ИзготавливаемыеРазбираемыеИзделия</Name>
+		<Code>   </Code>
+		<Description>Изготавливаемые/разбираемые изделия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cc6d575f-9342-4ccc-9d6d-eee58c349e24">
+		<Name>ИзделияТТП</Name>
+		<Code>   </Code>
+		<Description>Изделия ТТП/ГТП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="40da2207-946a-4da4-83d2-c100bfeeaaa2">
+		<Name>Комплектование</Name>
+		<Code>   </Code>
+		<Description>Комплектование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a12e01a0-2060-41a3-a267-60475b8a1391">
+		<Name>ОперационныеЭскизы</Name>
+		<Code>   </Code>
+		<Description>Операционные эскизы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="96bc1971-aae8-48f3-8e00-b4a6cab4bd00">
+		<Name>ОсновныеМатериалы</Name>
+		<Code>   </Code>
+		<Description>Основные материалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="affad7df-1125-4236-9d67-32b866bbcc91">
+		<Name>ПоследовательныйРасчет</Name>
+		<Code>B01</Code>
+		<Description>Последовательный расчет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="57ab6658-a7cb-4b79-a117-c51b9290a2fd">
+		<Name>ПунктыМаршрута</Name>
+		<Code>   </Code>
+		<Description>Пункты маршрута</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c1f87ce3-a7e5-4faa-89cb-2e028a49c271">
+		<Name>Расчеты</Name>
+		<Code>   </Code>
+		<Description>Расчеты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ade2ac84-9f28-4740-9104-0999d3295bda">
+		<Name>Ресурсы</Name>
+		<Code>   </Code>
+		<Description>Ресурсы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="21aa8f9c-a59d-4325-a144-c9db70440b7d">
+		<Name>СодержаниеОперации</Name>
+		<Code>   </Code>
+		<Description>Содержание операции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b847e61b-5ffe-4488-b257-260503904daa">
+		<Name>МаркиМатериаловСортаменты</Name>
+		<Code>L20</Code>
+		<Description>Сортаменты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2f382dc3-3a99-423d-8d66-bce8a2a91546">
+		<Name>СправочнаяГеометрия</Name>
+		<Code>REF</Code>
+		<Description>Справочная геометрия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c304fdc6-82c0-40b2-b34a-a3b6d6b456e2">
+		<Name>СредстваОснащения</Name>
+		<Code>   </Code>
+		<Description>Средства технологического оснащения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="65a18338-5a8d-4402-9b38-e4632139a094">
+		<Name>Операции</Name>
+		<Code>   </Code>
+		<Description>Технологические операции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dd63ad07-2791-4756-b957-4e7c5c0b0c53">
+		<Name>СсылочныеТехпроцессы</Name>
+		<Code>   </Code>
+		<Description>Технологические процессы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6f04175c-1b98-4ef7-a822-5ab4a3ca4a05">
+		<Name>ТипоразмерыСортамента</Name>
+		<Code>L22</Code>
+		<Description>Типоразмеры</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

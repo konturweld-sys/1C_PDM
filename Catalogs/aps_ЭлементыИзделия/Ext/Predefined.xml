@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="dadfd4a6-c6b9-4008-8a52-cdc7ba0be08a">
+		<Name>ВновьУстанавливаемыеСоставныеЧасти</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Вновь устанавливаемые составные части</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8060035b-b99b-4e44-9cb7-4a0b8fcf4708">
+		<Name>Детали</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Детали</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d5c17766-39b2-4cc1-8267-5556e7fd6c3a">
+		<Name>Документация</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Документация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d621093d-7fb7-4a49-b73c-e86d4ddaebca">
+		<Name>ДорабатываемоеИзделие</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Дорабатываемое изделие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="799a3522-f7b5-4009-80bf-8a69f4951130">
+		<Name>Комплексы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Комплексы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="363b4fe3-372a-46a8-ab55-f4652ecf5a7f">
+		<Name>Комплекты</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Комплекты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8f620f35-1e6b-42d4-b3cd-f357b868b6dc">
+		<Name>Материалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Материалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="42be5dae-b39d-4b11-b390-6cd1f0c81364">
+		<Name>Прочее</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Прочее</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8d08b6bc-3382-47e7-b8db-915fabb40a23">
+		<Name>ПрочиеИзделия</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Прочие изделия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="de2ca50b-357e-45d2-a5ce-019dc426c8a3">
+		<Name>СборочныеЕдиницы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сборочные единицы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="42d0d052-fc64-4f3c-bcc0-c1d60e6796a0">
+		<Name>СнятыеСоставныеЧасти</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Снятые составные части</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d6ab3334-d9e9-4e15-bf69-e34909f32031">
+		<Name>СтандартныеИзделия</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Стандартные изделия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f75d8464-46d3-48af-af72-dcdd7572ade5">
+		<Name>УстанавливаютПо</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Устанавливают по</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d5076c0-8538-4c42-ae69-a90efe9273cd">
+		<Name>УстанавливаютПриЭлектромонтаже</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Устанавливают при электромонтаже</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

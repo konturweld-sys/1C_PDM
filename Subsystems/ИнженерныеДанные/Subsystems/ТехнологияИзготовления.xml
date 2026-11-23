@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Subsystem uuid="e23591cd-7fde-49e9-8013-51f5217ef8aa">
+		<Properties>
+			<Name>ТехнологияИзготовления</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Технология изготовления (PDM)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Manufacturing (PDM)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ТехнологическаяСхема</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.aps_ИнтерфейсТехнолога</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.aps_УправлениеТехнологией</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ВидыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ВидыСТО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_МаскиОбозначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_МетодыОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ФорматыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ШаблоныТехнологическихСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ЭлементыИзделия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ЭлементыСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ЭлементыСправочников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ЭлементыТехнологии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_ВидыСТО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_СостоянияЭлемента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_УсловияТруда</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_УправлениеТехнологиейИзготовления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.aps_ТарифнаяСетка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.aps_Согласование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.aps_Поручение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ТехнологическийПроцесс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Материал</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.aps_ФормаВыбораШаблонаСвязи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СвернутьВсеКромеТекущей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ТипыТарифныхСеток</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ГруппыИсполнителей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Маршрут</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СредствоОснащения</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="36f94ae0-63a4-4d9c-ab8b-8a7c3c800508">
+		<Name>Изменение</Name>
+		<Code>R01</Code>
+		<Description>Изменение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7e57e5a0-f42b-4ab5-a2f1-1e17ece479ae">
+		<Name>Исполнение</Name>
+		<Code>R02</Code>
+		<Description>Исполнение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5d904b6b-2d10-40ef-8896-9febf79b62f0">
+		<Name>КТМ</Name>
+		<Code>R04</Code>
+		<Description>Конструкторско-технологический модуль</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="83d4d40e-b181-42ee-9bcc-5e0b045c86f3">
+		<Name>Представление</Name>
+		<Code>R03</Code>
+		<Description>Представление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="897ea922-6630-4f9a-b84b-6a3e1754b805">
+		<Name>Внешние</Name>
+		<Code xsi:type="xs:decimal">15</Code>
+		<Description>Внешние</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e5c00766-98af-4b97-ba0a-99f4679732df">
+				<Name>КачествоПоставляемыхИзделий</Name>
+				<Code xsi:type="xs:decimal">16</Code>
+				<Description>Качество поставляемых изделий</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b4a01ba5-fbfe-48c3-a029-40ae3b792513">
+				<Name>ОтносительнаяСтоимость</Name>
+				<Code xsi:type="xs:decimal">17</Code>
+				<Description>Относительная стоимость</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e7a79045-978d-43e6-a5f1-02c8ae4b19f0">
+				<Name>РегулярностьПоставки</Name>
+				<Code xsi:type="xs:decimal">19</Code>
+				<Description>Регулярность поставки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="91810209-fc2e-4605-83e9-7316b6d987aa">
+				<Name>СрокиПоставки</Name>
+				<Code xsi:type="xs:decimal">18</Code>
+				<Description>Сроки поставки (относительные)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="20d837ca-153b-42e6-bf44-4ec3ee3d2a38">
+		<Name>Проектирование</Name>
+		<Code xsi:type="xs:decimal">22</Code>
+		<Description>Проектирование</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="055b8eb9-c81e-4ec2-a349-f9cb76ebb48a">
+				<Name>СложностьОтносительная</Name>
+				<Code xsi:type="xs:decimal">24</Code>
+				<Description>Сложность (относительная)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0e649ff5-e240-4f46-8195-d743742a37ad">
+				<Name>СтепеньЗаимствования</Name>
+				<Code xsi:type="xs:decimal">23</Code>
+				<Description>Степень заимствования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="1a0508d2-b6f0-4f19-bd8c-d8cb535eefc8">
+		<Name>Производственные</Name>
+		<Code xsi:type="xs:decimal">11</Code>
+		<Description>Производственные</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="c14335e9-22ba-41ec-84c5-7ee14d7b7b67">
+				<Name>КачествоИзготовления</Name>
+				<Code xsi:type="xs:decimal">13</Code>
+				<Description>Качество изготовления</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6f7e03a0-a20c-4555-9fe4-9bc4e76d255e">
+				<Name>ТрудоемкостьИзготовления</Name>
+				<Code xsi:type="xs:decimal">12</Code>
+				<Description>Трудоемкость изготовления (относительная)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4234718d-7864-4722-a681-f0fc4068a641">
+				<Name>ЭффективноеВремяИзготовления</Name>
+				<Code xsi:type="xs:decimal">14</Code>
+				<Description>Эффективное время изготовления</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="c4b5fad4-3ac8-4c3e-b8c3-75f1ecc90d72">
+		<Name>Эксплуатационные</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Эксплуатационные</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="528839b4-ed1f-4e03-ac8b-66376076c770">
+				<Name>ВнешнийВид</Name>
+				<Code xsi:type="xs:decimal">20</Code>
+				<Description>Внешний вид</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="840bd690-ba77-4ba2-8181-7cde7a270feb">
+				<Name>КачествоВЭксплуатации</Name>
+				<Code xsi:type="xs:decimal">21</Code>
+				<Description>Качество в эксплуатации</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bd04918b-9b06-4916-b4dc-11748a983c8d">
+				<Name>НадежностьПриЭксплуатации</Name>
+				<Code xsi:type="xs:decimal">10</Code>
+				<Description>Надежность при эксплуатации</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ece25450-d4d5-429a-8fde-806f1b4d4479">
+				<Name>Ремонтопригодность</Name>
+				<Code xsi:type="xs:decimal">8</Code>
+				<Description>Ремонтопригодность</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ed40a961-4aa5-4fcc-bd00-a09c6f1ce9a1">
+				<Name>Эргономика</Name>
+				<Code xsi:type="xs:decimal">9</Code>
+				<Description>Эргономика</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

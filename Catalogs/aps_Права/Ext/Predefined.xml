@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="325258ca-7cfc-4151-b0c5-fad488c97b8d">
+		<Name>Изменение</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Изменение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="add5b198-31a9-4b8d-b505-a0502b30c0a8">
+		<Name>ИзменениеГрупповойПолитики</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Изменение групповой политики</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e4b294ce-7069-4b71-bff1-ef0b2356c5ec">
+		<Name>ИзменениеОбъектнойПолитики</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Изменение объектной политики</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5cf829ef-cfe3-4f2d-9536-90d276dad588">
+		<Name>ИзменениеИИ</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Проведение извещения об изменении</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="72400938-6f0e-4a95-adf3-91dde7c49eac">
+		<Name>Просмотр</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Просмотр содержимого</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8c46c202-81f7-4ace-a42b-c409abffdff0">
+		<Name>Удаление</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Удаление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e9b968ea-742e-4b82-b8c6-20e09e1bc8ab">
+		<Name>УдалениеИзСтруктуры</Name>
+		<Code xsi:type="xs:decimal">8</Code>
+		<Description>Удаление из структуры</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

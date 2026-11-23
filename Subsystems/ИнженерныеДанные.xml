@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Subsystem uuid="d620cf88-2713-4253-b73e-e9a8642f6c47">
+		<Properties>
+			<Name>ИнженерныеДанные</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление инженерными данными (PDM)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Product data management (PDM)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Поиск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Браузер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ВидыЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Готово</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ГруппаПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Деталь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Документ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Закрыть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ИнженерныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Свойства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Карандаш</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Колонки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Личное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Настройка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_НовоеОкно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Папка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Подсказка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Применяемость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Проводник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ДействиеДобавить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ДействиеИзменить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ДействиеСоздать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ДействиеУдалить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочийСтол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РазвернутьВсе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторБлокаРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВставить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВставитьТаблицу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВыравниваниеПоЛевомуКраю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВыравниваниеПоПравомуКраю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВыравниваниеПоЦентру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВыравниваниеПоШирине</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторВырезать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторЖирныйШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторЗачеркнутыйШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторИсполнений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторКопировать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторКурсивныйШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторМаркированныйСписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторНадстрочник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторНумерованныйСписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторОтменитьИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторОчиститьФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторПечать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторПовторитьИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторПодстрочник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторПодчеркнутыйШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторПредпросмотр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторУвеличитьОтступ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторУменьшитьОтступ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторЦветТекста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РедакторЦветФона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Рейтинг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Ресурс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СоздатьНоменклатуру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СтрелкаВверх</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СтрелкаВниз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Строки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_УправляющееСвойство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочаяКопияОтменить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочаяКопияПолучить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочаяКопияПоместить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочаяКопияРедактировать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочаяКопияСохранить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_РабочаяКопияСохранитьРевизией</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ЭлементPDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.Полный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.aps_ИнтерфейсПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.aps_Пользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_XDTOСистемный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_Итераторы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_ОбработчикиСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_Сервер1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_Сервисы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_УправлениеВиртуальнымХостом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.aps_СистемныеМоделиXDTO</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.aps_ПередЗаписьюСправочниковЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.aps_ПриЗаписиСправочниковЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.aps_ФормаИндикатора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ИдентификаторыРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_КритерииОценки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_НаборыКритериевОценки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ОценкиПоКритериям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ПравилаУправления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ТипыАналогов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_ВидыСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_ВидыСравнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_ПриоритетыВыбораРевизий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_СтадииЖизненногоЦикла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_ИнформацияОбЭлементе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_КонструкторскоТехнологическийСправочник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_КонтекстнаяСправка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_Поиск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_Применяемость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_Проводник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_ПросмотрИзображения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_РабочийСтолПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_РасчетРейтинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_УправляющиеСвойстваРесурса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.aps_ОценкиЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.aps_УсловияПоиска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.aps_ШтрихкодыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.aps_Свойства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Состояние</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.aps_ОпытныйПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.aps_ПередЗаписьюСправочниковПараметров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ДействиеЗаменить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ОтметкаЧужихЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ВертикальныеСвязи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ХранилищеМоделейXDTO</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.aps_ВидыСериализованныхМоделей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.aps_XDTOСервисы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_СозданиеОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.aps_ПервоначальноеЗаполнение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ДействиеПодбор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СозданиеПравилаУправления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.aps_НедавниеМестаВыбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ЗначенияСвойств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ВставитьИзБуфера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ВырезатьВБуфер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_КопироватьВБуфер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.aps_ВыполнениеПоручений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.aps_ПриЗаписиСправочниковСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.aps_БуферКопирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СохранитьИзвещением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СохранитьКак</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Сохранить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СохранитьРевизией</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.aps_ДатаПоследнейРассылки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.aps_РассылкаВключена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.aps_РассылкаПочтовыхСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.aps_ПроверкаУникальностиВключена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.aps_СоздаватьНоменклатуру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_ПанельСпецсимволов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.aps_ПередЗаписьюСправочниковСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.aps_ПервоначальноеЗаполнениеEn</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_ВерификацияНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.aps_СтрокаСоединенияИС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.aps_ПравилаВыгрузкиДопДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_СписокВыбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ТаблицаВыбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.aps_ПодключаемыеМодули</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.aps_ПодключаемыеМодули</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ПоручениеВзятьНаРассмотрение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Закрепить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_Открепить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_КомплектДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_МаленькийComboBox</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ПоручениеОтклонить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.aps_ПоручениеПринять</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4f63d336-d916-44c4-b2e1-6a220518952c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.aps_КэшСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.aps_ОбменРИБ</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Администрирование</Subsystem>
+			<Subsystem>АрхивДокументации</Subsystem>
+			<Subsystem>Безопасность</Subsystem>
+			<Subsystem>Изменения</Subsystem>
+			<Subsystem>Нормирование</Subsystem>
+			<Subsystem>Параметрика</Subsystem>
+			<Subsystem>СтруктураИзделия</Subsystem>
+			<Subsystem>ТехнологияИзготовления</Subsystem>
+			<Subsystem>Уведомления</Subsystem>
+			<Subsystem>Файлы</Subsystem>
+			<Subsystem>ТехнологическаяСхема</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

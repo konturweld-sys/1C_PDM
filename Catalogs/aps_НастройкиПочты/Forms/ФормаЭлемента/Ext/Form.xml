@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Width>70</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроверитьСоединение" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьСоединение</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>en_US</v8:lang>
+						<v8:content>Test connection</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПроверитьСоединениеРасширеннаяПодсказка" id="32"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>en_US</v8:lang>
+					<v8:content>Name
+</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Адрес" id="3">
+			<DataPath>Объект.Адрес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>6</Width>
+			<ContextMenu name="АдресКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<UsualGroup name="ГруппаПолучениеПочты" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получение почты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа получение почты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПолучениеПочтыРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="ТипСервера" id="30">
+					<DataPath>Объект.ТипСервера</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ТипСервераКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТипСервераРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<UsualGroup name="ГруппаСерверPOP" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сервер POP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сервер POP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСерверPOPРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="АдресСервераPOP" id="5">
+							<DataPath>Объект.АдресСервера</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АдресСервераPOPКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="АдресСервераPOPРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="ПортPOP" id="13">
+							<DataPath>Объект.Порт</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПортPOPКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПортPOPРасширеннаяПодсказка" id="39"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПользователь" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользователь</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПользовательРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="Пользователь" id="11">
+							<DataPath>Объект.ИмяПользователя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="Пароль" id="9">
+							<DataPath>Объект.Пароль</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="42"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтправкаПочты" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка почты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отправка почты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаОтправкаПочтыРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСерверSMTP" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сервер SMTP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сервер SMTP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСерверSMTPРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="АдресСервераSMTP" id="7">
+							<DataPath>Объект.АдресСервераSMTP</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АдресСервераSMTPКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="АдресСервераSMTPРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ПортSMTP" id="15">
+							<DataPath>Объект.ПортSMTP</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПортSMTPКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ПортSMTPРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="ТребуетсяSMTPАутентификация" id="22">
+					<DataPath>Объект.ТребуетсяSMTPАутентификация</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТребуетсяSMTPАутентификацияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТребуетсяSMTPАутентификацияРасширеннаяПодсказка" id="47"/>
+					<Events>
+						<Event name="OnChange">ТребуетсяSMTPАутентификацияПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаПользовательSMTP" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользователь SMTP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользователь SMTP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПользовательSMTPРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="ИмяПользователяSMTP" id="26">
+							<DataPath>Объект.ИмяПользователяSMTP</DataPath>
+							<ContextMenu name="ИмяПользователяSMTPКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ИмяПользователяSMTPРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ПарольSMTP" id="28">
+							<DataPath>Объект.ПарольSMTP</DataPath>
+							<Width>10</Width>
+							<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПарольSMTPРасширеннаяПодсказка" id="50"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.aps_НастройкиПочты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьСоединение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить настройки учетной записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьСоединение</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="e8973cbe-1cf7-44be-8732-855ae713c18c">
+		<Name>УвеличениеНомераИзменения</Name>
+		<Code/>
+		<Description>Увеличение номера изменения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be9f082a-f842-457e-a638-948c7d3b5b71">
+		<Name>УвеличениеНомераИсполнения</Name>
+		<Code/>
+		<Description>Увеличение номера исполнения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
